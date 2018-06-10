@@ -1,0 +1,8 @@
+module: RKAutoLayout
+author: DaskiOFF
+author_url: http://t.me/daskioff
+clean: true
+
+copyright: '© 2018 [DaskiOFF](http://t.me/daskioff) under MIT License'
+
+swift_version: 4.1

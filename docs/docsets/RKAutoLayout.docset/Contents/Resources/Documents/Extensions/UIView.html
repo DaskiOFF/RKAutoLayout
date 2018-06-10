@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIView Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UIView" class="dashAnchor"></a>
+    <a title="UIView Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RKAutoLayout Docs</a> (13% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RKAutoLayout Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UIView Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RKConstraintSize.html">RKConstraintSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSLayoutConstraint.html">NSLayoutConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12RKAutoLayout12RKConstrainta">RKConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UIView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UIView</span> <span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">NSCoding</span><span class="p">,</span> <span class="kt">UIAppearance</span><span class="p">,</span> <span class="kt">UIAppearanceContainer</span><span class="p">,</span> <span class="kt">UIDynamicItem</span><span class="p">,</span> <span class="kt">UITraitEnvironment</span><span class="p">,</span> <span class="kt">UICoordinateSpace</span><span class="p">,</span> <span class="kt">UIFocusItem</span><span class="p">,</span> <span class="kt">CALayerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RKAL%20%3CADD%3E%20(Constraints)"></a>
+                <a name="//apple_ref/swift/Section/RKAL &lt;ADD&gt; (Constraints)" class="dashAnchor"></a>
+                <a href="#/RKAL%20%3CADD%3E%20(Constraints)">
+                  <h3 class="section-name">RKAL &lt;ADD&gt; (Constraints)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeOG4size_SayAC0I6CenterOG6centerSayAC0I4EDGEOG4edgeSb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alAdd(size:center:edge:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeOG4size_SayAC0I6CenterOG6centerSayAC0I4EDGEOG4edgeSb8isActivetF">rk_alAdd(size:center:edge:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remove"></a>
+                <a name="//apple_ref/swift/Section/Remove" class="dashAnchor"></a>
+                <a href="#/Remove">
+                  <h3 class="section-name">Remove</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE28rk_alRemoveCenterConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveCenterConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE28rk_alRemoveCenterConstraintsyyF">rk_alRemoveCenterConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveCenterConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveCenterXConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveCenterXConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveCenterXConstraintsyyF">rk_alRemoveCenterXConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveCenterXConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveCenterYConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveCenterYConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveCenterYConstraintsyyF">rk_alRemoveCenterYConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveCenterYConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RKAL%20%3CCENTER%3E%20(Constraints)"></a>
+                <a name="//apple_ref/swift/Section/RKAL &lt;CENTER&gt; (Constraints)" class="dashAnchor"></a>
+                <a href="#/RKAL%20%3CCENTER%3E%20(Constraints)">
+                  <h3 class="section-name">RKAL &lt;CENTER&gt; (Constraints)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alCenter(_:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF">rk_alCenter(_:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constraints for center</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="mi">300</span><span class="p">)])</span>
+</code></pre>
+
+<p>or</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">topAnchor</span><span class="p">)])</span>
+
+</code></pre>
+
+<p>or</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="kt">RKConstraintCenter</span><span class="o">.</span><span class="nf">center</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">offsetX</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="nv">offsetY</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">))</span>
+</code></pre>
+
+<p>etc.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RKConstraintSize&hellip;</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of constraints</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alCenter(with:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF">rk_alCenter(with:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE20rk_alCenterSuperViewSaySo18NSLayoutConstraintCGSb8isActive_tF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alCenterSuperView(isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE20rk_alCenterSuperViewSaySo18NSLayoutConstraintCGSb8isActive_tF">rk_alCenterSuperView(isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constraints for centering in superview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alCenterSuperView</span><span class="p">(</span><span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remove2"></a>
+                <a name="//apple_ref/swift/Section/Remove" class="dashAnchor"></a>
+                <a href="#/Remove2">
+                  <h3 class="section-name">Remove</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveAllEdgeConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveAllEdgeConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveAllEdgeConstraintsyyF">rk_alRemoveAllEdgeConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveAllEdgeConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE25rk_alRemoveTopConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveTopConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE25rk_alRemoveTopConstraintsyyF">rk_alRemoveTopConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveTopConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE26rk_alRemoveLeftConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveLeftConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE26rk_alRemoveLeftConstraintsyyF">rk_alRemoveLeftConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveLeftConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE28rk_alRemoveBottomConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveBottomConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE28rk_alRemoveBottomConstraintsyyF">rk_alRemoveBottomConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveBottomConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE27rk_alRemoveRightConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveRightConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE27rk_alRemoveRightConstraintsyyF">rk_alRemoveRightConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveRightConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveLeadingConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveLeadingConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE29rk_alRemoveLeadingConstraintsyyF">rk_alRemoveLeadingConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveLeadingConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE30rk_alRemoveTrailingConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveTrailingConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE30rk_alRemoveTrailingConstraintsyyF">rk_alRemoveTrailingConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveTrailingConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RKAL%20%3CEDGES%3E%20(Constraints)"></a>
+                <a name="//apple_ref/swift/Section/RKAL &lt;EDGES&gt; (Constraints)" class="dashAnchor"></a>
+                <a href="#/RKAL%20%3CEDGES%3E%20(Constraints)">
+                  <h3 class="section-name">RKAL &lt;EDGES&gt; (Constraints)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC16RKConstraintEDGEOd_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alEdge(_:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC16RKConstraintEDGEOd_Sb8isActivetF">rk_alEdge(_:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC16RKConstraintEDGEOG4with_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alEdge(with:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC16RKConstraintEDGEOG4with_Sb8isActivetF">rk_alEdge(with:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE24rk_alEdgeSuperViewBoundsSaySo18NSLayoutConstraintCGSb8isActive_tF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alEdgeSuperViewBounds(isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE24rk_alEdgeSuperViewBoundsSaySo18NSLayoutConstraintCGSb8isActive_tF">rk_alEdgeSuperViewBounds(isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constraints for edges superview bounds</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alEdgeSuperViewBounds</span><span class="p">(</span><span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remove3"></a>
+                <a name="//apple_ref/swift/Section/Remove" class="dashAnchor"></a>
+                <a href="#/Remove3">
+                  <h3 class="section-name">Remove</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE26rk_alRemoveSizeConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveSizeConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE26rk_alRemoveSizeConstraintsyyF">rk_alRemoveSizeConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveSizeConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE32rk_alRemoveSizeHeightConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveSizeHeightConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE32rk_alRemoveSizeHeightConstraintsyyF">rk_alRemoveSizeHeightConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveSizeHeightConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE31rk_alRemoveSizeWidthConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveSizeWidthConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE31rk_alRemoveSizeWidthConstraintsyyF">rk_alRemoveSizeWidthConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveSizeWidthConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RKAL%20%3CSIZE%3E%20(Constraints)"></a>
+                <a name="//apple_ref/swift/Section/RKAL &lt;SIZE&gt; (Constraints)" class="dashAnchor"></a>
+                <a href="#/RKAL%20%3CSIZE%3E%20(Constraints)">
+                  <h3 class="section-name">RKAL &lt;SIZE&gt; (Constraints)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alSize(_:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF">rk_alSize(_:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constraints for size</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="mi">3</span><span class="p">)])</span>
+</code></pre>
+
+<p>or</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">heightAnchor</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="o">.</span><span class="n">low</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">)])</span>
+
+</code></pre>
+
+<p>or</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="mi">60</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="mi">220</span><span class="p">)])</span>
+</code></pre>
+
+<p>etc.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set<RKConstraintSize></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of constraints</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alSize(with:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF">rk_alSize(with:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/SafeArea"></a>
+                <a name="//apple_ref/swift/Section/SafeArea" class="dashAnchor"></a>
+                <a href="#/SafeArea">
+                  <h3 class="section-name">SafeArea</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE010rkSafeAreaC5GuideSo08UILayoutG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/rkSafeAreaLayoutGuide" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE010rkSafeAreaC5GuideSo08UILayoutG0Cvp">rkSafeAreaLayoutGuide</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>с iOS 11 возвращает safeAreaLayoutGuide</p>
+
+<p>до iOS 11 возврaщает layoutGuides.first ?? layoutMarginsGuide</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 9, *)</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">rkSafeAreaLayoutGuide</span><span class="p">:</span> <span class="kt">UILayoutGuide</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE16rkSafeAreaInsetsSC06UIEdgeG0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/rkSafeAreaInsets" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE16rkSafeAreaInsetsSC06UIEdgeG0Vvp">rkSafeAreaInsets</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>с iOS 11 возвращает safeAreaInsets;</p>
+
+<p>до iOS 11 возврaщает UIEdgeInsets(top: x, left: 0, bottom: y, right: 0)</p>
+
+<p>где x – отступ сверху зависящий от statusBar и NavigationBar</p>
+
+<p>где y – отступ снизу зависящий от TabBar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 8, *)</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">rkSafeAreaInsets</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 <a class="link" href="http://t.me/daskioff" target="_blank" rel="external">DaskiOFF</a> under MIT License</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

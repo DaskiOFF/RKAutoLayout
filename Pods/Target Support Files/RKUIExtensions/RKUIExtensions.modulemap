@@ -1,0 +1,6 @@
+framework module RKUIExtensions {
+  umbrella header "RKUIExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

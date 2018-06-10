@@ -10,6 +10,14 @@
 		BB1736E420CD9E97001C953F /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */; };
 		BB1736E920CD9E97001C953F /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1736E820CD9E97001C953F /* RKAutoLayoutTests.swift */; };
 		BB1736EB20CD9E97001C953F /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1736DD20CD9E97001C953F /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE4FF7D20CDC2ED0081A81E /* SafeAreaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */; };
+		BBE4FF7E20CDC2ED0081A81E /* UIView_AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */; };
+		BBE4FF7F20CDC2ED0081A81E /* UIView_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */; };
+		BBE4FF8020CDC2ED0081A81E /* UIView_ConstraintStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */; };
+		BBE4FF8120CDC2ED0081A81E /* UIView_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */; };
+		BBE4FF8220CDC2ED0081A81E /* UIView_Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */; };
+		BBE4FF8320CDC2ED0081A81E /* RKAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */; };
+		FEB8CE5F7CD07B7D8319674B /* Pods_RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +31,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1736DD20CD9E97001C953F /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
 		BB1736DE20CD9E97001C953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1736E320CD9E97001C953F /* RKAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1736E820CD9E97001C953F /* RKAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAutoLayoutTests.swift; sourceTree = "<group>"; };
 		BB1736EA20CD9E97001C953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaCompatibility.swift; sourceTree = "<group>"; };
+		BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_AddAll.swift; sourceTree = "<group>"; };
+		BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Edge.swift; sourceTree = "<group>"; };
+		BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_ConstraintStorage.swift; sourceTree = "<group>"; };
+		BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Center.swift; sourceTree = "<group>"; };
+		BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Size.swift; sourceTree = "<group>"; };
+		BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAL.swift; sourceTree = "<group>"; };
+		F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB8CE5F7CD07B7D8319674B /* Pods_RKAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2A0E149F746C467FAADB43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */,
+				F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F5A4CE72E066CE059A3B6AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB1736D020CD9E97001C953F = {
 			isa = PBXGroup;
 			children = (
 				BB1736DC20CD9E97001C953F /* RKAutoLayout */,
 				BB1736E720CD9E97001C953F /* RKAutoLayoutTests */,
 				BB1736DB20CD9E97001C953F /* Products */,
+				0C2A0E149F746C467FAADB43 /* Pods */,
+				5F5A4CE72E066CE059A3B6AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +109,7 @@
 		BB1736DC20CD9E97001C953F /* RKAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				BBE4FF7420CDC2ED0081A81E /* Sources */,
 				BB1736DD20CD9E97001C953F /* RKAutoLayout.h */,
 				BB1736DE20CD9E97001C953F /* Info.plist */,
 			);
@@ -84,6 +123,28 @@
 				BB1736EA20CD9E97001C953F /* Info.plist */,
 			);
 			path = RKAutoLayoutTests;
+			sourceTree = "<group>";
+		};
+		BBE4FF7420CDC2ED0081A81E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */,
+				BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */,
+				BBE4FF7620CDC2ED0081A81E /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		BBE4FF7620CDC2ED0081A81E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */,
+				BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */,
+				BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */,
+				BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */,
+				BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1736EE20CD9E97001C953F /* Build configuration list for PBXNativeTarget "RKAutoLayout" */;
 			buildPhases = (
+				3EF43C8F726CDA18E5EA3168 /* [CP] Check Pods Manifest.lock */,
 				BB1736D520CD9E97001C953F /* Sources */,
 				BB1736D620CD9E97001C953F /* Frameworks */,
 				BB1736D720CD9E97001C953F /* Headers */,
@@ -189,11 +251,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EF43C8F726CDA18E5EA3168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RKAutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB1736D520CD9E97001C953F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE4FF7E20CDC2ED0081A81E /* UIView_AddAll.swift in Sources */,
+				BBE4FF8220CDC2ED0081A81E /* UIView_Size.swift in Sources */,
+				BBE4FF7D20CDC2ED0081A81E /* SafeAreaCompatibility.swift in Sources */,
+				BBE4FF7F20CDC2ED0081A81E /* UIView_Edge.swift in Sources */,
+				BBE4FF8120CDC2ED0081A81E /* UIView_Center.swift in Sources */,
+				BBE4FF8020CDC2ED0081A81E /* UIView_ConstraintStorage.swift in Sources */,
+				BBE4FF8320CDC2ED0081A81E /* RKAL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +428,7 @@
 		};
 		BB1736EF20CD9E97001C953F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +438,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RKAutoLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +454,7 @@
 		};
 		BB1736F020CD9E97001C953F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +464,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RKAutoLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +481,7 @@
 		BB1736F220CD9E97001C953F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RKAutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +499,7 @@
 		BB1736F320CD9E97001C953F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RKAutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

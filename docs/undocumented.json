@@ -1,0 +1,656 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_AddAll.swift",
+      "line": 7,
+      "symbol": "UIView.rk_alAdd(size:center:edge:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 6,
+      "symbol": "UIView.rk_alRemoveCenterConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 11,
+      "symbol": "UIView.rk_alRemoveCenterXConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 16,
+      "symbol": "UIView.rk_alRemoveCenterYConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 23,
+      "symbol": "RKConstraintCenter",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 24,
+      "symbol": "RKConstraintCenter.__x",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 25,
+      "symbol": "RKConstraintCenter.__xAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 26,
+      "symbol": "RKConstraintCenter.__y",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 27,
+      "symbol": "RKConstraintCenter.__yAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 41,
+      "symbol": "RKConstraintCenter.centerX(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 44,
+      "symbol": "RKConstraintCenter.centerX(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 47,
+      "symbol": "RKConstraintCenter.centerX(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 52,
+      "symbol": "RKConstraintCenter.centerY(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 55,
+      "symbol": "RKConstraintCenter.centerY(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 58,
+      "symbol": "RKConstraintCenter.centerY(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Center.swift",
+      "line": 91,
+      "symbol": "UIView.rk_alCenter(with:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 14,
+      "symbol": "UIView.rk_alRemoveAllEdgeConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 23,
+      "symbol": "UIView.rk_alRemoveTopConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 27,
+      "symbol": "UIView.rk_alRemoveLeftConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 31,
+      "symbol": "UIView.rk_alRemoveBottomConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 35,
+      "symbol": "UIView.rk_alRemoveRightConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 39,
+      "symbol": "UIView.rk_alRemoveLeadingConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 43,
+      "symbol": "UIView.rk_alRemoveTrailingConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 50,
+      "symbol": "RKConstraintEDGE",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 51,
+      "symbol": "RKConstraintEDGE.__top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 52,
+      "symbol": "RKConstraintEDGE.__topAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 53,
+      "symbol": "RKConstraintEDGE.__left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 54,
+      "symbol": "RKConstraintEDGE.__leftAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 55,
+      "symbol": "RKConstraintEDGE.__leading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 56,
+      "symbol": "RKConstraintEDGE.__leadingAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 57,
+      "symbol": "RKConstraintEDGE.__bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 58,
+      "symbol": "RKConstraintEDGE.__bottomGreaterOrEqual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 59,
+      "symbol": "RKConstraintEDGE.__bottomAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 60,
+      "symbol": "RKConstraintEDGE.__right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 61,
+      "symbol": "RKConstraintEDGE.__rightAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 62,
+      "symbol": "RKConstraintEDGE.__trailing",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 63,
+      "symbol": "RKConstraintEDGE.__trailingAnchor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 81,
+      "symbol": "RKConstraintEDGE.top(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 84,
+      "symbol": "RKConstraintEDGE.top(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 87,
+      "symbol": "RKConstraintEDGE.top(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 91,
+      "symbol": "RKConstraintEDGE.left(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 94,
+      "symbol": "RKConstraintEDGE.left(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 97,
+      "symbol": "RKConstraintEDGE.left(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 101,
+      "symbol": "RKConstraintEDGE.leading(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 104,
+      "symbol": "RKConstraintEDGE.leading(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 107,
+      "symbol": "RKConstraintEDGE.leading(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 111,
+      "symbol": "RKConstraintEDGE.bottom(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 114,
+      "symbol": "RKConstraintEDGE.bottom(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 117,
+      "symbol": "RKConstraintEDGE.bottom(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 120,
+      "symbol": "RKConstraintEDGE.bottomGreaterOrEqual(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 124,
+      "symbol": "RKConstraintEDGE.right(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 127,
+      "symbol": "RKConstraintEDGE.right(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 130,
+      "symbol": "RKConstraintEDGE.right(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 134,
+      "symbol": "RKConstraintEDGE.trailing(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 137,
+      "symbol": "RKConstraintEDGE.trailing(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 140,
+      "symbol": "RKConstraintEDGE.trailing(_:offset:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 149,
+      "symbol": "UIView.rk_alEdge(_:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Edge.swift",
+      "line": 154,
+      "symbol": "UIView.rk_alEdge(with:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 14,
+      "symbol": "UIView.rk_alRemoveSizeConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 18,
+      "symbol": "UIView.rk_alRemoveSizeHeightConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 23,
+      "symbol": "UIView.rk_alRemoveSizeWidthConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 30,
+      "symbol": "RKConstraintSize",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 31,
+      "symbol": "RKConstraintSize.__widthPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 32,
+      "symbol": "RKConstraintSize.__widthDimensionPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 33,
+      "symbol": "RKConstraintSize.__widthMinPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 34,
+      "symbol": "RKConstraintSize.__widthMaxPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 36,
+      "symbol": "RKConstraintSize.__heightPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 37,
+      "symbol": "RKConstraintSize.__heightDimensionPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 38,
+      "symbol": "RKConstraintSize.__heightMinPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 39,
+      "symbol": "RKConstraintSize.__heightMaxPriorityActive",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 57,
+      "symbol": "RKConstraintSize.width(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 60,
+      "symbol": "RKConstraintSize.width(_:multiplier:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 63,
+      "symbol": "RKConstraintSize.width(_:multiplier:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 66,
+      "symbol": "RKConstraintSize.width(min:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 69,
+      "symbol": "RKConstraintSize.width(max:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 74,
+      "symbol": "RKConstraintSize.height(_:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 77,
+      "symbol": "RKConstraintSize.height(_:multiplier:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 80,
+      "symbol": "RKConstraintSize.height(_:multiplier:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 83,
+      "symbol": "RKConstraintSize.height(min:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 86,
+      "symbol": "RKConstraintSize.height(max:priority:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/Extensions/UIView_Size.swift",
+      "line": 119,
+      "symbol": "UIView.rk_alSize(with:isActive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 4,
+      "symbol": "RKConstraint",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 5,
+      "symbol": "RKConstraints",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 11,
+      "symbol": "Array.activate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 15,
+      "symbol": "Array.deactivate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 19,
+      "symbol": "Array.removeAllConstraints()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 31,
+      "symbol": "NSLayoutConstraint.removeFromView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 44,
+      "symbol": "RKConstraintPriority",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 45,
+      "symbol": "RKConstraintPriority.high",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 46,
+      "symbol": "RKConstraintPriority.low",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 47,
+      "symbol": "RKConstraintPriority.required",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 48,
+      "symbol": "RKConstraintPriority.custom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout/Sources/RKAL.swift",
+      "line": 50,
+      "symbol": "RKConstraintPriority.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAutoLayout"
+}
