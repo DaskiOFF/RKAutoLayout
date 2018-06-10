@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RKAutoLayout'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Easy Auto Layout'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   Easy Auto Layout
+  
+  0.1.1
+    Update README
 
   0.1.0
     Init
@@ -41,5 +44,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'RKUIExtensions', '~> 0.1.0'
+  s.dependency 'RKUIExtensions', '~> 0.1.1'
 end
