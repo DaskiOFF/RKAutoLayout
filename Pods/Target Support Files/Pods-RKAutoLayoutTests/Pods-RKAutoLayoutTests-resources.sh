@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-KG_FILE="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Pods-RKAutoLayout-resources-Installation-Flag"
+KG_FILE="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Pods-RKAutoLayoutTests-resources-Installation-Flag"
 if [ -f "$KG_FILE" ]; then exit 0; fi
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 touch "$KG_FILE"

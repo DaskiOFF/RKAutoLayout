@@ -7,7 +7,7 @@
 
 ## Documentations
 
-https://daskioff.github.io/RKAutoLayout
+https://daskioff.github.io/RKAutoLayout/
 
 ## Requirements
 

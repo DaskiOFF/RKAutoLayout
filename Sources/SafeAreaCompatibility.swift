@@ -42,7 +42,7 @@ public extension UIView {
                     bottomInset += tc.tabBar.frame.height
                 }
             }
-            
+
             return UIEdgeInsets(top: topInset, left: 0, bottom: bottomInset, right: 0)
         }
     }

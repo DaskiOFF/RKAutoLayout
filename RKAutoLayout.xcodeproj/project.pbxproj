@@ -7,142 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB1736E420CD9E97001C953F /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */; };
-		BB1736E920CD9E97001C953F /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1736E820CD9E97001C953F /* RKAutoLayoutTests.swift */; };
-		BB1736EB20CD9E97001C953F /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1736DD20CD9E97001C953F /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBE4FF7D20CDC2ED0081A81E /* SafeAreaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */; };
-		BBE4FF7E20CDC2ED0081A81E /* UIView_AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */; };
-		BBE4FF7F20CDC2ED0081A81E /* UIView_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */; };
-		BBE4FF8020CDC2ED0081A81E /* UIView_ConstraintStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */; };
-		BBE4FF8120CDC2ED0081A81E /* UIView_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */; };
-		BBE4FF8220CDC2ED0081A81E /* UIView_Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */; };
-		BBE4FF8320CDC2ED0081A81E /* RKAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */; };
-		FEB8CE5F7CD07B7D8319674B /* Pods_RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */; };
+		6C925FA1AAC0B049713EAED2 /* Pods_RKAutoLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */; };
+		BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */; };
+		BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */; };
+		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */; };
+		BBFD276020CE5D760065BFA1 /* UIView_AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */; };
+		BBFD276120CE5D760065BFA1 /* UIView_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */; };
+		BBFD276220CE5D760065BFA1 /* UIView_ConstraintStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */; };
+		BBFD276320CE5D760065BFA1 /* UIView_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */; };
+		BBFD276420CE5D760065BFA1 /* UIView_Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */; };
+		BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275E20CE5D760065BFA1 /* RKAL.swift */; };
+		DAB30E286AECFBD8C29E851C /* Pods_RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BB1736E520CD9E97001C953F /* PBXContainerItemProxy */ = {
+		BBB8FAA420CE5CF300A81120 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BB1736D120CD9E97001C953F /* Project object */;
+			containerPortal = BBB8FA9020CE5CF300A81120 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB1736D920CD9E97001C953F;
+			remoteGlobalIDString = BBB8FA9820CE5CF300A81120;
 			remoteInfo = RKAutoLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
-		B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1736DD20CD9E97001C953F /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
-		BB1736DE20CD9E97001C953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB1736E320CD9E97001C953F /* RKAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1736E820CD9E97001C953F /* RKAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAutoLayoutTests.swift; sourceTree = "<group>"; };
-		BB1736EA20CD9E97001C953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaCompatibility.swift; sourceTree = "<group>"; };
-		BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_AddAll.swift; sourceTree = "<group>"; };
-		BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Edge.swift; sourceTree = "<group>"; };
-		BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_ConstraintStorage.swift; sourceTree = "<group>"; };
-		BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Center.swift; sourceTree = "<group>"; };
-		BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Size.swift; sourceTree = "<group>"; };
-		BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAL.swift; sourceTree = "<group>"; };
-		F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
+		BBB8FA9D20CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBB8FAA220CE5CF300A81120 /* RKAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAutoLayoutTests.swift; sourceTree = "<group>"; };
+		BBB8FAA920CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaCompatibility.swift; sourceTree = "<group>"; };
+		BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_AddAll.swift; sourceTree = "<group>"; };
+		BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Edge.swift; sourceTree = "<group>"; };
+		BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_ConstraintStorage.swift; sourceTree = "<group>"; };
+		BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Center.swift; sourceTree = "<group>"; };
+		BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Size.swift; sourceTree = "<group>"; };
+		BBFD275E20CE5D760065BFA1 /* RKAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAL.swift; sourceTree = "<group>"; };
+		CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BB1736D620CD9E97001C953F /* Frameworks */ = {
+		BBB8FA9520CE5CF300A81120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB8CE5F7CD07B7D8319674B /* Pods_RKAutoLayout.framework in Frameworks */,
+				DAB30E286AECFBD8C29E851C /* Pods_RKAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB1736E020CD9E97001C953F /* Frameworks */ = {
+		BBB8FA9F20CE5CF300A81120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1736E420CD9E97001C953F /* RKAutoLayout.framework in Frameworks */,
+				BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */,
+				6C925FA1AAC0B049713EAED2 /* Pods_RKAutoLayoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C2A0E149F746C467FAADB43 /* Pods */ = {
+		338D614CDA8D485E7CAC52CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */,
-				F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5F5A4CE72E066CE059A3B6AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B85091C39F59B7CE1DF15ED8 /* Pods_RKAutoLayout.framework */,
+				0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */,
+				DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BB1736D020CD9E97001C953F = {
+		A63165EC9C3D564C6EE36A3D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB1736DC20CD9E97001C953F /* RKAutoLayout */,
-				BB1736E720CD9E97001C953F /* RKAutoLayoutTests */,
-				BB1736DB20CD9E97001C953F /* Products */,
-				0C2A0E149F746C467FAADB43 /* Pods */,
-				5F5A4CE72E066CE059A3B6AC /* Frameworks */,
+				EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */,
+				808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */,
+				CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */,
+				4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBB8FA8F20CE5CF300A81120 = {
+			isa = PBXGroup;
+			children = (
+				BBB8FA9B20CE5CF300A81120 /* RKAutoLayout */,
+				BBB8FAA620CE5CF300A81120 /* RKAutoLayoutTests */,
+				BBB8FA9A20CE5CF300A81120 /* Products */,
+				338D614CDA8D485E7CAC52CC /* Frameworks */,
+				A63165EC9C3D564C6EE36A3D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		BB1736DB20CD9E97001C953F /* Products */ = {
+		BBB8FA9A20CE5CF300A81120 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */,
-				BB1736E320CD9E97001C953F /* RKAutoLayoutTests.xctest */,
+				BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */,
+				BBB8FAA220CE5CF300A81120 /* RKAutoLayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB1736DC20CD9E97001C953F /* RKAutoLayout */ = {
+		BBB8FA9B20CE5CF300A81120 /* RKAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				BBE4FF7420CDC2ED0081A81E /* Sources */,
-				BB1736DD20CD9E97001C953F /* RKAutoLayout.h */,
-				BB1736DE20CD9E97001C953F /* Info.plist */,
+				BBFD275620CE5D760065BFA1 /* Sources */,
+				BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */,
+				BBB8FA9D20CE5CF300A81120 /* Info.plist */,
 			);
 			path = RKAutoLayout;
 			sourceTree = "<group>";
 		};
-		BB1736E720CD9E97001C953F /* RKAutoLayoutTests */ = {
+		BBB8FAA620CE5CF300A81120 /* RKAutoLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB1736E820CD9E97001C953F /* RKAutoLayoutTests.swift */,
-				BB1736EA20CD9E97001C953F /* Info.plist */,
+				BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */,
+				BBB8FAA920CE5CF300A81120 /* Info.plist */,
 			);
 			path = RKAutoLayoutTests;
 			sourceTree = "<group>";
 		};
-		BBE4FF7420CDC2ED0081A81E /* Sources */ = {
+		BBFD275620CE5D760065BFA1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BBE4FF7C20CDC2ED0081A81E /* RKAL.swift */,
-				BBE4FF7520CDC2ED0081A81E /* SafeAreaCompatibility.swift */,
-				BBE4FF7620CDC2ED0081A81E /* Extensions */,
+				BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */,
+				BBFD275820CE5D760065BFA1 /* Extensions */,
+				BBFD275E20CE5D760065BFA1 /* RKAL.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		BBE4FF7620CDC2ED0081A81E /* Extensions */ = {
+		BBFD275820CE5D760065BFA1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BBE4FF7720CDC2ED0081A81E /* UIView_AddAll.swift */,
-				BBE4FF7A20CDC2ED0081A81E /* UIView_Center.swift */,
-				BBE4FF7920CDC2ED0081A81E /* UIView_ConstraintStorage.swift */,
-				BBE4FF7820CDC2ED0081A81E /* UIView_Edge.swift */,
-				BBE4FF7B20CDC2ED0081A81E /* UIView_Size.swift */,
+				BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */,
+				BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */,
+				BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */,
+				BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */,
+				BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,26 +158,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BB1736D720CD9E97001C953F /* Headers */ = {
+		BBB8FA9620CE5CF300A81120 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1736EB20CD9E97001C953F /* RKAutoLayout.h in Headers */,
+				BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BB1736D920CD9E97001C953F /* RKAutoLayout */ = {
+		BBB8FA9820CE5CF300A81120 /* RKAutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB1736EE20CD9E97001C953F /* Build configuration list for PBXNativeTarget "RKAutoLayout" */;
+			buildConfigurationList = BBB8FAAD20CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayout" */;
 			buildPhases = (
-				3EF43C8F726CDA18E5EA3168 /* [CP] Check Pods Manifest.lock */,
-				BB1736D520CD9E97001C953F /* Sources */,
-				BB1736D620CD9E97001C953F /* Frameworks */,
-				BB1736D720CD9E97001C953F /* Headers */,
-				BB1736D820CD9E97001C953F /* Resources */,
+				5E8BF6328DC525CF2F641FA1 /* [CP] Check Pods Manifest.lock */,
+				BBB8FA9420CE5CF300A81120 /* Sources */,
+				BBB8FA9520CE5CF300A81120 /* Frameworks */,
+				BBB8FA9620CE5CF300A81120 /* Headers */,
+				BBB8FA9720CE5CF300A81120 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -177,72 +185,74 @@
 			);
 			name = RKAutoLayout;
 			productName = RKAutoLayout;
-			productReference = BB1736DA20CD9E97001C953F /* RKAutoLayout.framework */;
+			productReference = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB1736E220CD9E97001C953F /* RKAutoLayoutTests */ = {
+		BBB8FAA120CE5CF300A81120 /* RKAutoLayoutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB1736F120CD9E97001C953F /* Build configuration list for PBXNativeTarget "RKAutoLayoutTests" */;
+			buildConfigurationList = BBB8FAB020CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayoutTests" */;
 			buildPhases = (
-				BB1736DF20CD9E97001C953F /* Sources */,
-				BB1736E020CD9E97001C953F /* Frameworks */,
-				BB1736E120CD9E97001C953F /* Resources */,
+				34E7538B641CC569983E122A /* [CP] Check Pods Manifest.lock */,
+				BBB8FA9E20CE5CF300A81120 /* Sources */,
+				BBB8FA9F20CE5CF300A81120 /* Frameworks */,
+				BBB8FAA020CE5CF300A81120 /* Resources */,
+				7B9DF30E3B3CA2B4F0A5AD54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BB1736E620CD9E97001C953F /* PBXTargetDependency */,
+				BBB8FAA520CE5CF300A81120 /* PBXTargetDependency */,
 			);
 			name = RKAutoLayoutTests;
 			productName = RKAutoLayoutTests;
-			productReference = BB1736E320CD9E97001C953F /* RKAutoLayoutTests.xctest */;
+			productReference = BBB8FAA220CE5CF300A81120 /* RKAutoLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BB1736D120CD9E97001C953F /* Project object */ = {
+		BBB8FA9020CE5CF300A81120 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Roman Kotov";
 				TargetAttributes = {
-					BB1736D920CD9E97001C953F = {
+					BBB8FA9820CE5CF300A81120 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
-					BB1736E220CD9E97001C953F = {
+					BBB8FAA120CE5CF300A81120 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
 			};
-			buildConfigurationList = BB1736D420CD9E97001C953F /* Build configuration list for PBXProject "RKAutoLayout" */;
+			buildConfigurationList = BBB8FA9320CE5CF300A81120 /* Build configuration list for PBXProject "RKAutoLayout" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BB1736D020CD9E97001C953F;
-			productRefGroup = BB1736DB20CD9E97001C953F /* Products */;
+			mainGroup = BBB8FA8F20CE5CF300A81120;
+			productRefGroup = BBB8FA9A20CE5CF300A81120 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB1736D920CD9E97001C953F /* RKAutoLayout */,
-				BB1736E220CD9E97001C953F /* RKAutoLayoutTests */,
+				BBB8FA9820CE5CF300A81120 /* RKAutoLayout */,
+				BBB8FAA120CE5CF300A81120 /* RKAutoLayoutTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BB1736D820CD9E97001C953F /* Resources */ = {
+		BBB8FA9720CE5CF300A81120 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB1736E120CD9E97001C953F /* Resources */ = {
+		BBB8FAA020CE5CF300A81120 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,7 +262,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3EF43C8F726CDA18E5EA3168 /* [CP] Check Pods Manifest.lock */ = {
+		34E7538B641CC569983E122A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RKAutoLayoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8BF6328DC525CF2F641FA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,43 +298,61 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7B9DF30E3B3CA2B4F0A5AD54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RKUIExtensions/RKUIExtensions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKUIExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BB1736D520CD9E97001C953F /* Sources */ = {
+		BBB8FA9420CE5CF300A81120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE4FF7E20CDC2ED0081A81E /* UIView_AddAll.swift in Sources */,
-				BBE4FF8220CDC2ED0081A81E /* UIView_Size.swift in Sources */,
-				BBE4FF7D20CDC2ED0081A81E /* SafeAreaCompatibility.swift in Sources */,
-				BBE4FF7F20CDC2ED0081A81E /* UIView_Edge.swift in Sources */,
-				BBE4FF8120CDC2ED0081A81E /* UIView_Center.swift in Sources */,
-				BBE4FF8020CDC2ED0081A81E /* UIView_ConstraintStorage.swift in Sources */,
-				BBE4FF8320CDC2ED0081A81E /* RKAL.swift in Sources */,
+				BBFD276020CE5D760065BFA1 /* UIView_AddAll.swift in Sources */,
+				BBFD276420CE5D760065BFA1 /* UIView_Size.swift in Sources */,
+				BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */,
+				BBFD276120CE5D760065BFA1 /* UIView_Edge.swift in Sources */,
+				BBFD276320CE5D760065BFA1 /* UIView_Center.swift in Sources */,
+				BBFD276220CE5D760065BFA1 /* UIView_ConstraintStorage.swift in Sources */,
+				BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB1736DF20CD9E97001C953F /* Sources */ = {
+		BBB8FA9E20CE5CF300A81120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1736E920CD9E97001C953F /* RKAutoLayoutTests.swift in Sources */,
+				BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BB1736E620CD9E97001C953F /* PBXTargetDependency */ = {
+		BBB8FAA520CE5CF300A81120 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BB1736D920CD9E97001C953F /* RKAutoLayout */;
-			targetProxy = BB1736E520CD9E97001C953F /* PBXContainerItemProxy */;
+			target = BBB8FA9820CE5CF300A81120 /* RKAutoLayout */;
+			targetProxy = BBB8FAA420CE5CF300A81120 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		BB1736EC20CD9E97001C953F /* Debug */ = {
+		BBB8FAAB20CE5CF300A81120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,7 +415,7 @@
 			};
 			name = Debug;
 		};
-		BB1736ED20CD9E97001C953F /* Release */ = {
+		BBB8FAAC20CE5CF300A81120 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,9 +472,9 @@
 			};
 			name = Release;
 		};
-		BB1736EF20CD9E97001C953F /* Debug */ = {
+		BBB8FAAE20CE5CF300A81120 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E81D69B5BB96D1D20F5FE6E /* Pods-RKAutoLayout.debug.xcconfig */;
+			baseConfigurationReference = EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -452,9 +498,9 @@
 			};
 			name = Debug;
 		};
-		BB1736F020CD9E97001C953F /* Release */ = {
+		BBB8FAAF20CE5CF300A81120 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F682B67D836AEC49C6CA479E /* Pods-RKAutoLayout.release.xcconfig */;
+			baseConfigurationReference = 808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,8 +524,9 @@
 			};
 			name = Release;
 		};
-		BB1736F220CD9E97001C953F /* Debug */ = {
+		BBB8FAB120CE5CF300A81120 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,8 +543,9 @@
 			};
 			name = Debug;
 		};
-		BB1736F320CD9E97001C953F /* Release */ = {
+		BBB8FAB220CE5CF300A81120 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,34 +565,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB1736D420CD9E97001C953F /* Build configuration list for PBXProject "RKAutoLayout" */ = {
+		BBB8FA9320CE5CF300A81120 /* Build configuration list for PBXProject "RKAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB1736EC20CD9E97001C953F /* Debug */,
-				BB1736ED20CD9E97001C953F /* Release */,
+				BBB8FAAB20CE5CF300A81120 /* Debug */,
+				BBB8FAAC20CE5CF300A81120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB1736EE20CD9E97001C953F /* Build configuration list for PBXNativeTarget "RKAutoLayout" */ = {
+		BBB8FAAD20CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB1736EF20CD9E97001C953F /* Debug */,
-				BB1736F020CD9E97001C953F /* Release */,
+				BBB8FAAE20CE5CF300A81120 /* Debug */,
+				BBB8FAAF20CE5CF300A81120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB1736F120CD9E97001C953F /* Build configuration list for PBXNativeTarget "RKAutoLayoutTests" */ = {
+		BBB8FAB020CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayoutTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB1736F220CD9E97001C953F /* Debug */,
-				BB1736F320CD9E97001C953F /* Release */,
+				BBB8FAB120CE5CF300A81120 /* Debug */,
+				BBB8FAB220CE5CF300A81120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BB1736D120CD9E97001C953F /* Project object */;
+	rootObject = BBB8FA9020CE5CF300A81120 /* Project object */;
 }

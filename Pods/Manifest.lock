@@ -1,16 +1,16 @@
 PODS:
-  - RKUIExtensions (0.1.0)
+  - RKUIExtensions (0.1.1)
 
 DEPENDENCIES:
-  - RKUIExtensions (= 0.1.0)
+  - RKUIExtensions (= 0.1.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - RKUIExtensions
 
 SPEC CHECKSUMS:
-  RKUIExtensions: 1aaf45b7d475d140dea32f9c3b6577d6c09763ee
+  RKUIExtensions: c422f8c36acd41b140af4d3808598cbbb7ca63ef
 
-PODFILE CHECKSUM: 478e016e5fc37400b2ff147f413ef588491d3c86
+PODFILE CHECKSUM: ae7011fa5b5ab82eb0ec3fb49eef2062e7e879b5
 
 COCOAPODS: 1.5.2
