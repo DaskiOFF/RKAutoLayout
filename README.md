@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/RKAutoLayout.svg?style=flat)](https://cocoapods.org/pods/RKAutoLayout)
 [![License](https://img.shields.io/cocoapods/l/RKAutoLayout.svg?style=flat)](https://cocoapods.org/pods/RKAutoLayout)
 [![Platform](https://img.shields.io/cocoapods/p/RKAutoLayout.svg?style=flat)](https://cocoapods.org/pods/RKAutoLayout)
+[![Swift Version](https://img.shields.io/badge/Swift-4.1-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 
 ## Documentations
 
