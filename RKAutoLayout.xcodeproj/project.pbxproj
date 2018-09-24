@@ -12,11 +12,11 @@
 		BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */; };
 		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */; };
-		BBFD276020CE5D760065BFA1 /* UIView_AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */; };
-		BBFD276120CE5D760065BFA1 /* UIView_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */; };
-		BBFD276220CE5D760065BFA1 /* UIView_ConstraintStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */; };
-		BBFD276320CE5D760065BFA1 /* UIView_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */; };
-		BBFD276420CE5D760065BFA1 /* UIView_Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */; };
+		BBFD276020CE5D760065BFA1 /* UIView+AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */; };
+		BBFD276120CE5D760065BFA1 /* UIView+Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275A20CE5D760065BFA1 /* UIView+Edge.swift */; };
+		BBFD276220CE5D760065BFA1 /* UIView+ConstraintStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */; };
+		BBFD276320CE5D760065BFA1 /* UIView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */; };
+		BBFD276420CE5D760065BFA1 /* UIView+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */; };
 		BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275E20CE5D760065BFA1 /* RKAL.swift */; };
 		DAB30E286AECFBD8C29E851C /* Pods_RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */; };
 /* End PBXBuildFile section */
@@ -42,11 +42,11 @@
 		BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAutoLayoutTests.swift; sourceTree = "<group>"; };
 		BBB8FAA920CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaCompatibility.swift; sourceTree = "<group>"; };
-		BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_AddAll.swift; sourceTree = "<group>"; };
-		BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Edge.swift; sourceTree = "<group>"; };
-		BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_ConstraintStorage.swift; sourceTree = "<group>"; };
-		BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Center.swift; sourceTree = "<group>"; };
-		BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Size.swift; sourceTree = "<group>"; };
+		BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddAll.swift"; sourceTree = "<group>"; };
+		BBFD275A20CE5D760065BFA1 /* UIView+Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Edge.swift"; sourceTree = "<group>"; };
+		BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintStorage.swift"; sourceTree = "<group>"; };
+		BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Center.swift"; sourceTree = "<group>"; };
+		BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Size.swift"; sourceTree = "<group>"; };
 		BBFD275E20CE5D760065BFA1 /* RKAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAL.swift; sourceTree = "<group>"; };
 		CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,11 +146,11 @@
 		BBFD275820CE5D760065BFA1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BBFD275920CE5D760065BFA1 /* UIView_AddAll.swift */,
-				BBFD275A20CE5D760065BFA1 /* UIView_Edge.swift */,
-				BBFD275B20CE5D760065BFA1 /* UIView_ConstraintStorage.swift */,
-				BBFD275C20CE5D760065BFA1 /* UIView_Center.swift */,
-				BBFD275D20CE5D760065BFA1 /* UIView_Size.swift */,
+				BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */,
+				BBFD275A20CE5D760065BFA1 /* UIView+Edge.swift */,
+				BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */,
+				BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */,
+				BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,12 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBFD276020CE5D760065BFA1 /* UIView_AddAll.swift in Sources */,
-				BBFD276420CE5D760065BFA1 /* UIView_Size.swift in Sources */,
+				BBFD276020CE5D760065BFA1 /* UIView+AddAll.swift in Sources */,
+				BBFD276420CE5D760065BFA1 /* UIView+Size.swift in Sources */,
 				BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */,
-				BBFD276120CE5D760065BFA1 /* UIView_Edge.swift in Sources */,
-				BBFD276320CE5D760065BFA1 /* UIView_Center.swift in Sources */,
-				BBFD276220CE5D760065BFA1 /* UIView_ConstraintStorage.swift in Sources */,
+				BBFD276120CE5D760065BFA1 /* UIView+Edge.swift in Sources */,
+				BBFD276320CE5D760065BFA1 /* UIView+Center.swift in Sources */,
+				BBFD276220CE5D760065BFA1 /* UIView+ConstraintStorage.swift in Sources */,
 				BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
