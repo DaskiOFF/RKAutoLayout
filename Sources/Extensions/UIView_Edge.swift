@@ -1,59 +1,35 @@
 import UIKit
 
 @available (iOS 9, *)
-public extension UIView {
-    // MARK: - Remove
-    public func rk_alRemoveAllEdgeConstraints() {
-        rk_alRemoveTopConstraints()
-        rk_alRemoveLeftConstraints()
-        rk_alRemoveBottomConstraints()
-        rk_alRemoveRightConstraints()
-        rk_alRemoveLeadingConstraints()
-        rk_alRemoveTrailingConstraints()
-    }
-
-    public func rk_alRemoveTopConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTopConstraints.removeAllConstraints()
-    }
-    public func rk_alRemoveLeftConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeftConstraints.removeAllConstraints()
-    }
-    public func rk_alRemoveBottomConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeBottomConstraints.removeAllConstraints()
-    }
-    public func rk_alRemoveRightConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeRightConstraints.removeAllConstraints()
-    }
-    public func rk_alRemoveLeadingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeadingConstraints.removeAllConstraints()
-    }
-    public func rk_alRemoveTrailingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTrailingConstraints.removeAllConstraints()
-    }
-}
-
-@available (iOS 9, *)
 public enum RKConstraintEDGE: Hashable, Equatable {
+    /// :nodoc:
     case __top(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __topAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __left(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __leftAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __leading(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __leadingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __bottom(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __bottomGreaterOrEqual(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __bottomAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __right(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __rightAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __trailing(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __trailingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
 
+    /// :nodoc:
     public var hashValue: Int {
         switch self {
         case .__top(_, _, _), .__topAnchor(_, _, _, _): return 1
@@ -65,6 +41,7 @@ public enum RKConstraintEDGE: Hashable, Equatable {
         }
     }
 
+    /// :nodoc:
     public static func == (lhs: RKConstraintEDGE, rhs: RKConstraintEDGE) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
@@ -222,5 +199,43 @@ public extension UIView {
     @discardableResult
     public func rk_alEdgeSuperViewBounds(isActive: Bool = true) -> RKConstraints {
         return self.rk_alEdge(.top(0), .left(0), .bottom(0), .right(0), isActive: isActive)
+    }
+}
+
+@available (iOS 9, *)
+public extension UIView {
+    // MARK: - Remove <EDGES>
+    public func rk_alRemoveAllEdgeConstraints() {
+        rk_alRemoveTopConstraints()
+        rk_alRemoveLeftConstraints()
+        rk_alRemoveBottomConstraints()
+        rk_alRemoveRightConstraints()
+        rk_alRemoveLeadingConstraints()
+        rk_alRemoveTrailingConstraints()
+    }
+
+    public func rk_alRemoveTopConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeTopConstraints.removeAllConstraints()
+    }
+    public func rk_alRemoveLeftConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeLeftConstraints.removeAllConstraints()
+    }
+    public func rk_alRemoveBottomConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeBottomConstraints.removeAllConstraints()
+    }
+    public func rk_alRemoveRightConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeRightConstraints.removeAllConstraints()
+    }
+    public func rk_alRemoveLeadingConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeLeadingConstraints.removeAllConstraints()
+    }
+    public func rk_alRemoveTrailingConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.edgeTrailingConstraints.removeAllConstraints()
     }
 }

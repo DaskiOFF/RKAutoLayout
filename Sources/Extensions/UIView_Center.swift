@@ -1,31 +1,17 @@
 import UIKit
 
 @available (iOS 9, *)
-public extension UIView {
-    // MARK: - Remove
-    public func rk_alRemoveCenterConstraints() {
-        rk_alRemoveCenterXConstraints()
-        rk_alRemoveCenterYConstraints()
-    }
-
-    public func rk_alRemoveCenterXConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.centerXConstraints.removeAllConstraints()
-    }
-
-    public func rk_alRemoveCenterYConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.centerYConstraints.removeAllConstraints()
-    }
-}
-
-@available (iOS 9, *)
 public enum RKConstraintCenter: Hashable, Equatable {
+    /// :nodoc:
     case __x(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __xAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __y(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __yAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
 
+    /// :nodoc:
     public var hashValue: Int {
         switch self {
         case .__x(_, _, _), .__xAnchor(_, _, _, _): return 1
@@ -33,6 +19,7 @@ public enum RKConstraintCenter: Hashable, Equatable {
         }
     }
 
+    /// :nodoc:
     public static func == (lhs: RKConstraintCenter, rhs: RKConstraintCenter) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
@@ -139,5 +126,24 @@ public extension UIView {
     @discardableResult
     public func rk_alCenterSuperView(isActive: Bool = true) -> RKConstraints {
         return self.rk_alCenter(.centerX(), .centerY(), isActive: isActive)
+    }
+}
+
+@available (iOS 9, *)
+public extension UIView {
+    // MARK: - Remove <CENTER>
+    public func rk_alRemoveCenterConstraints() {
+        rk_alRemoveCenterXConstraints()
+        rk_alRemoveCenterYConstraints()
+    }
+
+    public func rk_alRemoveCenterXConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.centerXConstraints.removeAllConstraints()
+    }
+
+    public func rk_alRemoveCenterYConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.centerYConstraints.removeAllConstraints()
     }
 }

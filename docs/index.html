@@ -13,7 +13,7 @@
     <a title="RKAutoLayout  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">RKAutoLayout Docs</a> (13% documented)</p>
+        <p><a href="index.html">RKAutoLayout Docs</a> (20% documented)</p>
         <p class="header-right"><a href="https://github.com/DaskiOFF/RKAutoLayout"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -81,18 +81,52 @@
             <h1 id='rkautolayout' class='heading'>RKAutoLayout</h1>
 
 <p><a href="https://travis-ci.org/DaskiOFF/RKAutoLayout"><img src="https://img.shields.io/travis/DaskiOFF/RKAutoLayout.svg?style=flat" alt="CI Status"></a>
+<a href="https://cocoapods.org/"><img src="https://img.shields.io/badge/Cocoapods-compatible-4BC51D.svg?style=flat" alt="Cocoapods compatible"></a>
 <a href="https://cocoapods.org/pods/RKAutoLayout"><img src="https://img.shields.io/cocoapods/v/RKAutoLayout.svg?style=flat" alt="Version"></a>
-<a href="https://cocoapods.org/pods/RKAutoLayout"><img src="https://img.shields.io/cocoapods/l/RKAutoLayout.svg?style=flat" alt="License"></a>
-<a href="https://cocoapods.org/pods/RKAutoLayout"><img src="https://img.shields.io/cocoapods/p/RKAutoLayout.svg?style=flat" alt="Platform"></a></p>
+<a href="https://cocoapods.org/pods/RKAutoLayout"><img src="https://img.shields.io/cocoapods/p/RKAutoLayout.svg?style=flat" alt="Platform"></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/Swift-4.1-brightgreen.svg?style=flat" alt="Swift Version"></a>
+<a href="https://cocoapods.org/pods/RKAutoLayout"><img src="https://img.shields.io/cocoapods/l/RKAutoLayout.svg?style=flat" alt="License"></a></p>
 <h2 id='documentations' class='heading'>Documentations</h2>
 
-<p><a href="https://daskioff.github.io/RKAutoLayout">https://daskioff.github.io/RKAutoLayout</a></p>
+<p><a href="https://daskioff.github.io/RKAutoLayout/">https://daskioff.github.io/RKAutoLayout/</a></p>
 <h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0 and above</li>
+<li>Swift 4.1</li>
+</ul>
 <h2 id='installation' class='heading'>Installation</h2>
 
 <p>RKAutoLayout is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile:</p>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'RKAutoLayout'</span>
+</code></pre>
+<h2 id='examples' class='heading'>Examples</h2>
+<pre class="highlight swift"><code>
+<span class="c1">/// Add all</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alAdd</span><span class="p">(</span>
+    <span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="n">anotherView</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">100</span><span class="p">)],</span> 
+    <span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">()],</span> 
+    <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="o">-</span><span class="mi">34</span><span class="p">)],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">100</span><span class="p">)],</span> <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="o">-</span><span class="mi">34</span><span class="p">)],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">()],</span> <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">topAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="o">-</span><span class="mi">34</span><span class="p">)])</span>
+
+<span class="c1">/// Edges</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alEdgeSuperViewBounds</span><span class="p">()</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">200</span><span class="p">))</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="n">bottomAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="o">-</span><span class="mi">43</span><span class="p">))</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="o">.</span><span class="nf">left</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+
+<span class="c1">/// Size</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="mi">3</span><span class="p">)])</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">heightAnchor</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="o">.</span><span class="n">low</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">)])</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="mi">60</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="mi">220</span><span class="p">)])</span>
+
+<span class="c1">/// Center</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alCenterSuperView</span><span class="p">()</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="mi">300</span><span class="p">)])</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">topAnchor</span><span class="p">)])</span>
+<span class="n">anyView</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="kt">RKConstraintCenter</span><span class="o">.</span><span class="nf">center</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">offsetX</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="nv">offsetY</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">))</span>
 </code></pre>
 <h2 id='author' class='heading'>Author</h2>
 

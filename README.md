@@ -13,6 +13,9 @@ https://daskioff.github.io/RKAutoLayout/
 
 ## Requirements
 
+- iOS 9.0 and above
+- Swift 4.1
+
 ## Installation
 
 RKAutoLayout is available through [CocoaPods](https://cocoapods.org). To install
@@ -20,6 +23,36 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'RKAutoLayout'
+```
+
+## Examples
+
+```swift
+
+/// Add all
+anyView.rk_alAdd(
+    size: [.width(anotherView), .height(100)], 
+    center: [.centerX()], 
+    edge: [.top(10), .bottom(anotherView, offset: -34)], isActive: false)
+anyView.rk_alAdd(size: [.height(100)], edge: [.top(10), .bottom(anotherView, offset: -34)], isActive: false)
+anyView.rk_alAdd(center: [.centerX()], edge: [.top(10), .bottom(anotherView.topAnchor, offset: -34)])
+
+/// Edges
+anyView.rk_alEdgeSuperViewBounds()
+anyView.rk_alEdge(.top(200))
+anyView.rk_alEdge(.top(bottomAnchor, offset: -43))
+anyView.rk_alEdge(.top(0), .left(10), isActive: false)
+
+/// Size
+anyView.rk_alSize(values: [.width(50), .height(anotherView, multiplier: 3)])
+anyView.rk_alSize(values: [.width(anotherView.heightAnchor, priority: .low), .height(anotherView)])
+anyView.rk_alSize(values: [.width(200), .height(min: 60), .height(max: 220)])
+
+/// Center
+anyView.rk_alCenterSuperView()
+anyView.rk_alCenter(values: [.centerX(100), .centerY(300)])
+anyView.rk_alCenter(values: [.centerX(), .centerY(anotherView.topAnchor)])
+anyView.rk_alCenter(values: RKConstraintCenter.center(anotherView, offsetX: -100, offsetY: -100))
 ```
 
 ## Author

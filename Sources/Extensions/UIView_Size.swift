@@ -1,35 +1,26 @@
 import UIKit
 
 @available (iOS 9, *)
-public extension UIView {
-    // MARK: - Remove
-    public func rk_alRemoveSizeConstraints() {
-        rk_alRemoveSizeWidthConstraints()
-        rk_alRemoveSizeHeightConstraints()
-    }
-    public func rk_alRemoveSizeHeightConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.sizeHeightConstraints.removeAllConstraints()
-    }
-
-    public func rk_alRemoveSizeWidthConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.sizeWidthConstraints.removeAllConstraints()
-    }
-}
-
-@available (iOS 9, *)
 public enum RKConstraintSize: Hashable, Equatable {
+    /// :nodoc:
     case __widthPriorityActive(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __widthDimensionPriorityActive(NSLayoutDimension, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __widthMinPriorityActive(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __widthMaxPriorityActive(CGFloat, RKConstraintPriority, Bool)
 
+    /// :nodoc:
     case __heightPriorityActive(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __heightDimensionPriorityActive(NSLayoutDimension, CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __heightMinPriorityActive(CGFloat, RKConstraintPriority, Bool)
+    /// :nodoc:
     case __heightMaxPriorityActive(CGFloat, RKConstraintPriority, Bool)
 
+    /// :nodoc:
     public var hashValue: Int {
         switch self {
         case .__widthPriorityActive(_, _, _), .__widthDimensionPriorityActive(_, _, _, _): return 1
@@ -41,6 +32,7 @@ public enum RKConstraintSize: Hashable, Equatable {
         }
     }
 
+    /// :nodoc:
     public static func == (lhs: RKConstraintSize, rhs: RKConstraintSize) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
@@ -164,5 +156,23 @@ public extension UIView {
         }
 
         return constraints
+    }
+}
+
+@available (iOS 9, *)
+public extension UIView {
+    // MARK: - Remove <SIZE>
+    public func rk_alRemoveSizeConstraints() {
+        rk_alRemoveSizeWidthConstraints()
+        rk_alRemoveSizeHeightConstraints()
+    }
+    public func rk_alRemoveSizeHeightConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.sizeHeightConstraints.removeAllConstraints()
+    }
+
+    public func rk_alRemoveSizeWidthConstraints() {
+        guard let storage = constraintsStorage else { return }
+        storage.sizeWidthConstraints.removeAllConstraints()
     }
 }

@@ -61,6 +61,16 @@ public extension UIViewController {
             return topLayoutGuide.bottomAnchor
         }
     }
+
+    /// Возвращает view.rkSafeAreaLayoutGuide.leftAnchor
+    public var rkLeftAnchor: NSLayoutXAxisAnchor {
+        return view.rkSafeAreaLayoutGuide.leftAnchor
+    }
+
+    /// Возвращает view.rkSafeAreaLayoutGuide.leadingAnchor
+    public var rkLeadingAnchor: NSLayoutXAxisAnchor {
+        return view.rkSafeAreaLayoutGuide.leadingAnchor
+    }
     
     /// с iOS 11 возвращает view.rkSafeAreaLayoutGuide.bottomAnchor
     ///
@@ -71,5 +81,15 @@ public extension UIViewController {
         } else {
             return bottomLayoutGuide.topAnchor
         }
+    }
+
+    /// Возвращает view.rkSafeAreaLayoutGuide.rightAnchor
+    public var rkRightAnchor: NSLayoutXAxisAnchor {
+        return view.rkSafeAreaLayoutGuide.rightAnchor
+    }
+
+    /// Возвращает view.rkSafeAreaLayoutGuide.trailingAnchor
+    public var rkTrailingAnchorAnchor: NSLayoutXAxisAnchor {
+        return view.rkSafeAreaLayoutGuide.trailingAnchor
     }
 }
