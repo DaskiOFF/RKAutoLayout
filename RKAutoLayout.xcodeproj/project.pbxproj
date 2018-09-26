@@ -13,6 +13,7 @@
 		BB546864215BFF8300337775 /* RKConstraintCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546863215BFF8300337775 /* RKConstraintCenter.swift */; };
 		BB546867215BFFEB00337775 /* RKConstraintBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546866215BFFEB00337775 /* RKConstraintBuilder.swift */; };
 		BB546869215C005C00337775 /* RKConstraintCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546868215C005C00337775 /* RKConstraintCenterTests.swift */; };
+		BB54686D215C054700337775 /* UIViewExtCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54686C215C054700337775 /* UIViewExtCenterTests.swift */; };
 		BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */; };
 		BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */; };
 		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +46,7 @@
 		BB546863215BFF8300337775 /* RKConstraintCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenter.swift; sourceTree = "<group>"; };
 		BB546866215BFFEB00337775 /* RKConstraintBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBuilder.swift; sourceTree = "<group>"; };
 		BB546868215C005C00337775 /* RKConstraintCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenterTests.swift; sourceTree = "<group>"; };
+		BB54686C215C054700337775 /* UIViewExtCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtCenterTests.swift; sourceTree = "<group>"; };
 		BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
 		BBB8FA9D20CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BB546868215C005C00337775 /* RKConstraintCenterTests.swift */,
+				BB54686C215C054700337775 /* UIViewExtCenterTests.swift */,
 			);
 			path = Center;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB54686D215C054700337775 /* UIViewExtCenterTests.swift in Sources */,
 				BB546869215C005C00337775 /* RKConstraintCenterTests.swift in Sources */,
 				BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */,
 			);
