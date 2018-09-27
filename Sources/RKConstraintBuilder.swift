@@ -8,13 +8,13 @@ protocol RKConstraintBuilder: class {
 
 class RKConstraintBaseBuilder<AnchorType> {
     let anchor: AnchorType?
-    let offset: CGFloat
+    let value: CGFloat
     let priority: RKConstraintPriority
     let isActive: Bool
 
-    init(anchor: AnchorType?, offset: CGFloat, priority: RKConstraintPriority, isActive: Bool) {
+    init(anchor: AnchorType?, value: CGFloat, priority: RKConstraintPriority, isActive: Bool) {
         self.anchor = anchor
-        self.offset = offset
+        self.value = value
         self.priority = priority
         self.isActive = isActive
     }

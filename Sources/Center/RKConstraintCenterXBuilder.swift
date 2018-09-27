@@ -7,6 +7,6 @@ class RKConstraintCenterXBuilder: RKConstraintBaseBuilder<NSLayoutXAxisAnchor>, 
         guard let superview = view.superview else { fatalError("rk_alCenter: superview should not be nil!") }
 
         let anchor = self.anchor ?? superview.centerXAnchor
-        return view.centerXAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: self.isActive && isActive)
+        return view.centerXAnchor.constraint(equalTo: anchor, constant: value).set(priority: priority).set(active: self.isActive && isActive)
     }
 }

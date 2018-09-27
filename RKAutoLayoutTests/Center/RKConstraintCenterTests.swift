@@ -24,7 +24,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == nil)
-            XCTAssert(builder.offset == 0)
+            XCTAssert(builder.value == 0)
             XCTAssert(builder.priority.value == RKConstraintPriority.required.value)
             XCTAssert(builder.isActive == true)
         }
@@ -37,7 +37,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == nil)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
@@ -50,7 +50,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == view.centerXAnchor)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
@@ -63,7 +63,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == view.leftAnchor)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
@@ -78,7 +78,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == nil)
-            XCTAssert(builder.offset == 0)
+            XCTAssert(builder.value == 0)
             XCTAssert(builder.priority.value == RKConstraintPriority.required.value)
             XCTAssert(builder.isActive == true)
         }
@@ -91,7 +91,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == nil)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
@@ -104,7 +104,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == view.centerYAnchor)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
@@ -117,7 +117,7 @@ class RKConstraintCenterTests: XCTestCase {
             }
 
             XCTAssert(builder.anchor == view.topAnchor)
-            XCTAssert(builder.offset == 10)
+            XCTAssert(builder.value == 10)
             XCTAssert(builder.priority.value == RKConstraintPriority.low.value)
             XCTAssert(builder.isActive == false)
         }
