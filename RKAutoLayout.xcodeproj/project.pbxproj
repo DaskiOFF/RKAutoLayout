@@ -14,8 +14,12 @@
 		BB546867215BFFEB00337775 /* RKConstraintBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546866215BFFEB00337775 /* RKConstraintBuilder.swift */; };
 		BB546869215C005C00337775 /* RKConstraintCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546868215C005C00337775 /* RKConstraintCenterTests.swift */; };
 		BB54686D215C054700337775 /* UIViewExtCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54686C215C054700337775 /* UIViewExtCenterTests.swift */; };
+		BB546870215D4F5900337775 /* UIViewExtAddAllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54686F215D4F5900337775 /* UIViewExtAddAllTests.swift */; };
+		BB546873215D51BA00337775 /* RKConstraintSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546872215D51BA00337775 /* RKConstraintSize.swift */; };
+		BB546876215D521500337775 /* RKConstraintSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546875215D521500337775 /* RKConstraintSizeTests.swift */; };
+		BB546878215D529C00337775 /* UIViewExtSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546877215D529C00337775 /* UIViewExtSizeTests.swift */; };
 		BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */; };
-		BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */; };
+		BBB8FAA820CE5CF300A81120 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* ArrayExt.swift */; };
 		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */; };
 		BBFD276020CE5D760065BFA1 /* UIView+AddAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */; };
@@ -47,11 +51,15 @@
 		BB546866215BFFEB00337775 /* RKConstraintBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBuilder.swift; sourceTree = "<group>"; };
 		BB546868215C005C00337775 /* RKConstraintCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenterTests.swift; sourceTree = "<group>"; };
 		BB54686C215C054700337775 /* UIViewExtCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtCenterTests.swift; sourceTree = "<group>"; };
+		BB54686F215D4F5900337775 /* UIViewExtAddAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtAddAllTests.swift; sourceTree = "<group>"; };
+		BB546872215D51BA00337775 /* RKConstraintSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintSize.swift; sourceTree = "<group>"; };
+		BB546875215D521500337775 /* RKConstraintSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintSizeTests.swift; sourceTree = "<group>"; };
+		BB546877215D529C00337775 /* UIViewExtSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtSizeTests.swift; sourceTree = "<group>"; };
 		BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
 		BBB8FA9D20CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBB8FAA220CE5CF300A81120 /* RKAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKAutoLayoutTests.swift; sourceTree = "<group>"; };
+		BBB8FAA720CE5CF300A81120 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		BBB8FAA920CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaCompatibility.swift; sourceTree = "<group>"; };
 		BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddAll.swift"; sourceTree = "<group>"; };
@@ -125,6 +133,31 @@
 			path = Center;
 			sourceTree = "<group>";
 		};
+		BB54686E215D4F3A00337775 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				BB54686F215D4F5900337775 /* UIViewExtAddAllTests.swift */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		BB546871215D519B00337775 /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				BB546872215D51BA00337775 /* RKConstraintSize.swift */,
+			);
+			path = Size;
+			sourceTree = "<group>";
+		};
+		BB546874215D51FB00337775 /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				BB546875215D521500337775 /* RKConstraintSizeTests.swift */,
+				BB546877215D529C00337775 /* UIViewExtSizeTests.swift */,
+			);
+			path = Size;
+			sourceTree = "<group>";
+		};
 		BBB8FA8F20CE5CF300A81120 = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +191,10 @@
 		BBB8FAA620CE5CF300A81120 /* RKAutoLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				BB54686E215D4F3A00337775 /* All */,
+				BB546874215D51FB00337775 /* Size */,
 				BB546865215BFFCE00337775 /* Center */,
-				BBB8FAA720CE5CF300A81120 /* RKAutoLayoutTests.swift */,
+				BBB8FAA720CE5CF300A81120 /* ArrayExt.swift */,
 				BBB8FAA920CE5CF300A81120 /* Info.plist */,
 			);
 			path = RKAutoLayoutTests;
@@ -171,6 +206,7 @@
 				BBFD275720CE5D760065BFA1 /* SafeAreaCompatibility.swift */,
 				BB546866215BFFEB00337775 /* RKConstraintBuilder.swift */,
 				BB54685E215BFF0B00337775 /* Center */,
+				BB546871215D519B00337775 /* Size */,
 				BBFD275820CE5D760065BFA1 /* Extensions */,
 				BBFD275E20CE5D760065BFA1 /* RKAL.swift */,
 			);
@@ -363,6 +399,7 @@
 				BB546860215BFF2900337775 /* RKConstraintCenterXBuilder.swift in Sources */,
 				BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */,
 				BBFD276120CE5D760065BFA1 /* UIView+Edge.swift in Sources */,
+				BB546873215D51BA00337775 /* RKConstraintSize.swift in Sources */,
 				BBFD276320CE5D760065BFA1 /* UIView+Center.swift in Sources */,
 				BB546864215BFF8300337775 /* RKConstraintCenter.swift in Sources */,
 				BBFD276220CE5D760065BFA1 /* UIView+ConstraintStorage.swift in Sources */,
@@ -375,9 +412,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB546870215D4F5900337775 /* UIViewExtAddAllTests.swift in Sources */,
 				BB54686D215C054700337775 /* UIViewExtCenterTests.swift in Sources */,
+				BB546876215D521500337775 /* RKConstraintSizeTests.swift in Sources */,
 				BB546869215C005C00337775 /* RKConstraintCenterTests.swift in Sources */,
-				BBB8FAA820CE5CF300A81120 /* RKAutoLayoutTests.swift in Sources */,
+				BBB8FAA820CE5CF300A81120 /* ArrayExt.swift in Sources */,
+				BB546878215D529C00337775 /* UIViewExtSizeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

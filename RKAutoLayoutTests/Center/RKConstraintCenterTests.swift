@@ -1,11 +1,3 @@
-//
-//  RKConstraintCenterTests.swift
-//  RKAutoLayoutTests
-//
-//  Created by Roman Kotov on 26/09/2018.
-//  Copyright © 2018 Roman Kotov. All rights reserved.
-//
-
 import XCTest
 import UIKit
 

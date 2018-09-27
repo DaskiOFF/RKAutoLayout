@@ -1,23 +1,22 @@
 //
-//  RKAutoLayoutTests.swift
+//  RKConstraintSizeTests.swift
 //  RKAutoLayoutTests
 //
-//  Created by Roman Kotov on 11/06/2018.
+//  Created by Roman Kotov on 27/09/2018.
 //  Copyright © 2018 Roman Kotov. All rights reserved.
 //
 
 import XCTest
 
-class RKAutoLayoutTests: XCTestCase {
-    
+class RKConstraintSizeTests: XCTestCase {
+
+    let view: UIView = UIView()
+
     override func setUp() {
         super.setUp()
     }
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func testExample() {
     }
 }
