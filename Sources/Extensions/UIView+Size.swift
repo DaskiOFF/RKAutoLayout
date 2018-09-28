@@ -37,50 +37,16 @@ public extension UIView {
             return []
         }
 
-        guard let _ = superview else {
-            assertionFailure("rk_alSize: superview should not be nil!")
-            return []
-        }
-
         var constraints: RKConstraints = []
-        var constraint: NSLayoutConstraint!
-        var isWidthConstraint: Bool = false
         for value in values {
-            isWidthConstraint = false
+            let constraint = value.builder.build(withView: self, isActive: isActive)
 
-            switch value {
-            // constant
-            case .__widthPriorityActive(let constant, let priority, let active):
-                constraint = widthAnchor.constraint(equalToConstant: constant).set(priority: priority).set(active: active && isActive)
-                isWidthConstraint = true
-            case .__heightPriorityActive(let constant, let priority, let active):
-                constraint = heightAnchor.constraint(equalToConstant: constant).set(priority: priority).set(active: active && isActive)
-            // dimension
-            case .__widthDimensionPriorityActive(let dimension, let multiplier, let priority, let active):
-                constraint = widthAnchor.constraint(equalTo: dimension, multiplier: multiplier).set(priority: priority).set(active: active && isActive)
-                isWidthConstraint = true
-            case .__heightDimensionPriorityActive(let dimension, let multiplier, let priority, let active):
-                constraint = heightAnchor.constraint(equalTo: dimension, multiplier: multiplier).set(priority: priority).set(active: active && isActive)
-            // min constant
-            case .__widthMinPriorityActive(let constant, let priority, let active):
-                constraint = widthAnchor.constraint(greaterThanOrEqualToConstant: constant).set(priority: priority).set(active: active && isActive)
-                isWidthConstraint = true
-            case .__heightMinPriorityActive(let constant, let priority, let active):
-                constraint = heightAnchor.constraint(greaterThanOrEqualToConstant: constant).set(priority: priority).set(active: active && isActive)
-            // max constant
-            case .__widthMaxPriorityActive(let constant, let priority, let active):
-                constraint = widthAnchor.constraint(lessThanOrEqualToConstant: constant).set(priority: priority).set(active: active && isActive)
-                isWidthConstraint = true
-            case .__heightMaxPriorityActive(let constant, let priority, let active):
-                constraint = heightAnchor.constraint(lessThanOrEqualToConstant: constant).set(priority: priority).set(active: active && isActive)
-            }
-
-            if isWidthConstraint {
+            constraints.append(constraint)
+            if value.builder is RKConstraintWidthBuilder {
                 storage.sizeWidthConstraints.append(constraint)
             } else {
                 storage.sizeHeightConstraints.append(constraint)
             }
-            constraints.append(constraint)
         }
 
         return constraints
