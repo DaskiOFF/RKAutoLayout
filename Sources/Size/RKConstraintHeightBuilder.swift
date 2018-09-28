@@ -13,8 +13,6 @@ class RKConstraintHeightBuilder: RKConstraintBaseBuilder<NSLayoutDimension>, RKC
 
     // MARK: - RKConstraintBuilder
     func build(withView view: UIView, isActive: Bool) -> RKConstraint {
-        guard let superview = view.superview else { fatalError("rk_alCenter: superview should not be nil!") }
-
         let baseAnchor = view.heightAnchor
         let constraint: RKConstraint
         if let anchor = self.anchor {
