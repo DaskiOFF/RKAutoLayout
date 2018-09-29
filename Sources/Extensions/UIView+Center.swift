@@ -32,17 +32,15 @@ public extension UIView {
         guard !values.isEmpty else { return [] }
         translatesAutoresizingMaskIntoConstraints = false
 
-        guard let storage = constraintsStorage else { fatalError("rk_alCenter: constraintsStorage should not be nil!") }
-
         var constraints: RKConstraints = []
         for value in values {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
             if value.builder is RKConstraintCenterXBuilder {
-                storage.centerXConstraints.append(constraint)
+                constraintsStorage.centerXConstraints.append(constraint)
             } else {
-                storage.centerYConstraints.append(constraint)
+                constraintsStorage.centerYConstraints.append(constraint)
             }
         }
 
@@ -65,12 +63,10 @@ public extension UIView {
     }
 
     public func rk_alRemoveCenterXConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.centerXConstraints.removeAllConstraints()
+        constraintsStorage.centerXConstraints.removeAllConstraints()
     }
 
     public func rk_alRemoveCenterYConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.centerYConstraints.removeAllConstraints()
+        constraintsStorage.centerYConstraints.removeAllConstraints()
     }
 }

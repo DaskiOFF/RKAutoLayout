@@ -32,8 +32,8 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenterSuperView()
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
 
         do {
             let constraint = superview!.constraints.first!
@@ -67,7 +67,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerX())
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -85,7 +85,7 @@ class UIViewExtCenterTests: XCTestCase {
     func test_CenterX_Offset_Priority_ActiveFalse() {
         let constraints = view!.rk_alCenter(.centerX(10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
 
         let constraint = constraints.first!
         XCTAssert(constraint.constant == 10)
@@ -106,7 +106,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerX(10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -125,7 +125,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerX(superview!, offset: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -144,7 +144,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerX(superview!.leftAnchor, offset: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -164,7 +164,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerY())
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -182,7 +182,7 @@ class UIViewExtCenterTests: XCTestCase {
     func test_CenterY_Offset_Priority_ActiveFalse() {
         let constraints = view!.rk_alCenter(.centerY(10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
 
         let constraint = constraints.first!
         XCTAssert(constraint.constant == 10)
@@ -203,7 +203,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerY(10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -222,7 +222,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerY(superview!, offset: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -241,7 +241,7 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenter(.centerY(superview!.topAnchor, offset: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -261,38 +261,38 @@ class UIViewExtCenterTests: XCTestCase {
         let constraints = view!.rk_alCenterSuperView()
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
 
         view!.rk_alRemoveCenterXConstraints()
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 0)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
     }
 
     func test_RemoveCenterY() {
         let constraints = view!.rk_alCenterSuperView()
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
 
         view!.rk_alRemoveCenterYConstraints()
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 0)
     }
 
     func tests_RemoveBothCenterConstraints() {
         let constraints = view!.rk_alCenterSuperView()
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 1)
 
         view!.rk_alRemoveCenterConstraints()
 
-        XCTAssert(view!.constraintsStorage!.centerXConstraints.count == 0)
-        XCTAssert(view!.constraintsStorage!.centerYConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 0)
     }
 }

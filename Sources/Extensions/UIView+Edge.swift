@@ -13,28 +13,23 @@ public extension UIView {
         guard !values.isEmpty else { return [] }
         translatesAutoresizingMaskIntoConstraints = false
 
-        guard let storage = constraintsStorage else {
-            assertionFailure("rk_alEdge: constraintsStorage should not be nil!")
-            return []
-        }
-
         var constraints: RKConstraints = []
         for value in values {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
             if value.builder is RKConstraintTopBuilder {
-                storage.edgeTopConstraints.append(constraint)
+                constraintsStorage.edgeTopConstraints.append(constraint)
             } else if value.builder is RKConstraintLeftBuilder {
-                storage.edgeLeftConstraints.append(constraint)
+                constraintsStorage.edgeLeftConstraints.append(constraint)
             } else if value.builder is RKConstraintBottomBuilder {
-                storage.edgeBottomConstraints.append(constraint)
+                constraintsStorage.edgeBottomConstraints.append(constraint)
             } else if value.builder is RKConstraintRightBuilder {
-                storage.edgeRightConstraints.append(constraint)
+                constraintsStorage.edgeRightConstraints.append(constraint)
             } else if value.builder is RKConstraintLeadingBuilder {
-                storage.edgeLeadingConstraints.append(constraint)
+                constraintsStorage.edgeLeadingConstraints.append(constraint)
             } else {
-                storage.edgeTrailingConstraints.append(constraint)
+                constraintsStorage.edgeTrailingConstraints.append(constraint)
             }
         }
 
@@ -61,27 +56,21 @@ public extension UIView {
     }
 
     public func rk_alRemoveTopConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTopConstraints.removeAllConstraints()
+        constraintsStorage.edgeTopConstraints.removeAllConstraints()
     }
     public func rk_alRemoveLeftConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeftConstraints.removeAllConstraints()
+        constraintsStorage.edgeLeftConstraints.removeAllConstraints()
     }
     public func rk_alRemoveBottomConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeBottomConstraints.removeAllConstraints()
+        constraintsStorage.edgeBottomConstraints.removeAllConstraints()
     }
     public func rk_alRemoveRightConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeRightConstraints.removeAllConstraints()
+        constraintsStorage.edgeRightConstraints.removeAllConstraints()
     }
     public func rk_alRemoveLeadingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeadingConstraints.removeAllConstraints()
+        constraintsStorage.edgeLeadingConstraints.removeAllConstraints()
     }
     public func rk_alRemoveTrailingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTrailingConstraints.removeAllConstraints()
+        constraintsStorage.edgeTrailingConstraints.removeAllConstraints()
     }
 }

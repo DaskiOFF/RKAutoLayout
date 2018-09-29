@@ -26,7 +26,7 @@ extension UIView {
         }
     }
 
-    var constraintsStorage: RKConstraintsStorage? {
+    var constraintsStorage: RKConstraintsStorage {
         get {
             if let storage = __constraintsStorage {
                 return storage

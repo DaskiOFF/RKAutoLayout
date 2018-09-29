@@ -28,7 +28,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -48,7 +48,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -68,7 +68,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(superview!, multiplier: 2, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -88,7 +88,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(superview!, multiplier: 2, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -108,7 +108,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(superview!.heightAnchor, multiplier: 2, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -128,7 +128,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(superview!.heightAnchor, multiplier: 2, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -148,7 +148,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(min: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -168,7 +168,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(min: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -188,7 +188,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(max: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -208,7 +208,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(max: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -229,7 +229,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .width(max: 100, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 2)
         XCTAssert(view!.constraints.count == 2)
 
         do {
@@ -266,7 +266,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .width(max: superview!.heightAnchor, multiplier: 3, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 2)
         XCTAssert(superview!.constraints.count == 2)
 
         do {
@@ -303,7 +303,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .width(max: superview!, multiplier: 3, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 2)
         XCTAssert(superview!.constraints.count == 2)
 
         do {
@@ -340,7 +340,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -360,7 +360,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -380,7 +380,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(superview!, multiplier: 2, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -400,7 +400,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(superview!, multiplier: 2, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -420,7 +420,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(superview!.widthAnchor, multiplier: 2, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -440,7 +440,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(superview!.widthAnchor, multiplier: 2, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(superview!.constraints.count == 1)
 
         let constraint = superview!.constraints.first!
@@ -460,7 +460,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(min: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -480,7 +480,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(min: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -500,7 +500,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(max: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 0)
 
         let constraint = constraints.first!
@@ -520,7 +520,7 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.height(max: 10, priority: .low, isActive: true))
         XCTAssert(constraints.count == 1)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
         XCTAssert(view!.constraints.count == 1)
 
         let constraint = view!.constraints.first!
@@ -541,7 +541,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .height(max: 100, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 2)
         XCTAssert(view!.constraints.count == 2)
 
         do {
@@ -578,7 +578,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .height(max: superview!.widthAnchor, multiplier: 3, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 2)
         XCTAssert(superview!.constraints.count == 2)
 
         do {
@@ -615,7 +615,7 @@ class UIViewExtSizeTests: XCTestCase {
                                           .height(max: superview!, multiplier: 3, priority: .high, isActive: true))
         XCTAssert(constraints.count == 2)
 
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 2)
         XCTAssert(superview!.constraints.count == 2)
 
         do {
@@ -652,38 +652,38 @@ class UIViewExtSizeTests: XCTestCase {
         let constraints = view!.rk_alSize(.width(min: 10), .width(max: 100), .height(10))
         XCTAssert(constraints.count == 3)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
 
         view!.rk_alRemoveSizeWidthConstraints()
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 0)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
     }
 
     func test_RemoveHeight() {
         let constraints = view!.rk_alSize(.width(10), .height(min: 10), .height(max: 100))
         XCTAssert(constraints.count == 3)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 2)
 
         view!.rk_alRemoveSizeHeightConstraints()
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 0)
     }
 
     func tests_RemoveBothSizeConstraints() {
         let constraints = view!.rk_alSize(.width(10), .height(min: 10), .height(max: 100))
         XCTAssert(constraints.count == 3)
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 1)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 2)
 
         view!.rk_alRemoveSizeConstraints()
 
-        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 0)
-        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 0)
     }
 }

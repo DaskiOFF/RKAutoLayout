@@ -32,20 +32,15 @@ public extension UIView {
         guard !values.isEmpty else { return [] }
         translatesAutoresizingMaskIntoConstraints = false
 
-        guard let storage = constraintsStorage else {
-            assertionFailure("rk_alSize: constraintsStorage should not be nil!")
-            return []
-        }
-
         var constraints: RKConstraints = []
         for value in values {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
             if value.builder is RKConstraintWidthBuilder {
-                storage.sizeWidthConstraints.append(constraint)
+                constraintsStorage.sizeWidthConstraints.append(constraint)
             } else {
-                storage.sizeHeightConstraints.append(constraint)
+                constraintsStorage.sizeHeightConstraints.append(constraint)
             }
         }
 
@@ -61,12 +56,10 @@ public extension UIView {
         rk_alRemoveSizeHeightConstraints()
     }
     public func rk_alRemoveSizeHeightConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.sizeHeightConstraints.removeAllConstraints()
+        constraintsStorage.sizeHeightConstraints.removeAllConstraints()
     }
 
     public func rk_alRemoveSizeWidthConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.sizeWidthConstraints.removeAllConstraints()
+        constraintsStorage.sizeWidthConstraints.removeAllConstraints()
     }
 }
