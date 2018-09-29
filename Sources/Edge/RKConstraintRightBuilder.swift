@@ -2,14 +2,13 @@ import Foundation
 import UIKit
 
 @available (iOS 9, *)
-class RKConstraintCenterYBuilder: RKConstraintBaseBuilder<NSLayoutYAxisAnchor>, RKConstraintBuilder {
-
+class RKConstraintRightBuilder: RKConstraintBaseBuilder<NSLayoutXAxisAnchor>, RKConstraintBuilder {
     func build(withView view: UIView, isActive: Bool) -> RKConstraint {
-        guard let superview = view.superview else { fatalError("rk_alCenterY: superview should not be nil!") }
+        guard let superview = view.superview else { fatalError("rk_alEdgeRight: superview should not be nil!") }
 
-        let baseAnchor = view.centerYAnchor
-        let anchor = self.anchor ?? superview.centerYAnchor
-        let constraint: RKConstraint
+        let baseAnchor = view.rightAnchor
+        let anchor = self.anchor ?? superview.rightAnchor
+        let constraint: NSLayoutConstraint
         switch relation {
         case .equal:
             constraint = baseAnchor.constraint(equalTo: anchor, constant: value)

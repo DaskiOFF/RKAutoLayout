@@ -18,67 +18,24 @@ public extension UIView {
             return []
         }
 
-        guard let superview = superview else {
-            assertionFailure("rk_alEdge: superview should not be nil!")
-            return []
-        }
-
         var constraints: RKConstraints = []
-        var constraint: RKConstraint!
         for value in values {
-            switch value {
-            // top
-            case .__top(let offset, let priority, let active):
-                constraint = topAnchor.constraint(equalTo: superview.topAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTopConstraints.append(constraint)
-            case .__topAnchor(let anchor, let offset, let priority, let active):
-                constraint = topAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTopConstraints.append(constraint)
-
-            // left
-            case .__left(let offset, let priority, let active):
-                constraint = leftAnchor.constraint(equalTo: superview.leftAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeftConstraints.append(constraint)
-            case .__leftAnchor(let anchor, let offset, let priority, let active):
-                constraint = leftAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeftConstraints.append(constraint)
-
-            // leading
-            case .__leading(let offset, let priority, let active):
-                constraint = leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeadingConstraints.append(constraint)
-            case .__leadingAnchor(let anchor, let offset, let priority, let active):
-                constraint = leadingAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeadingConstraints.append(constraint)
-
-            // bottom
-            case .__bottom(let offset, let priority, let active):
-                constraint = bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            case .__bottomGreaterOrEqual(let offset, let priority, let active):
-                constraint = superview.bottomAnchor.constraint(greaterThanOrEqualTo: bottomAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            case .__bottomAnchor(let anchor, let offset, let priority, let active):
-                constraint = bottomAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            // right
-            case .__right(let offset, let priority, let active):
-                constraint = rightAnchor.constraint(equalTo: superview.rightAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeRightConstraints.append(constraint)
-            case .__rightAnchor(let anchor, let offset, let priority, let active):
-                constraint = rightAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeRightConstraints.append(constraint)
-
-            // trailing
-            case .__trailing(let offset, let priority, let active):
-                constraint = trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTrailingConstraints.append(constraint)
-            case .__trailingAnchor(let anchor, let offset, let priority, let active):
-                constraint = trailingAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTrailingConstraints.append(constraint)
-            }
+            let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
+            if value.builder is RKConstraintTopBuilder {
+                storage.edgeTopConstraints.append(constraint)
+            } else if value.builder is RKConstraintLeftBuilder {
+                storage.edgeLeftConstraints.append(constraint)
+            } else if value.builder is RKConstraintBottomBuilder {
+                storage.edgeBottomConstraints.append(constraint)
+            } else if value.builder is RKConstraintRightBuilder {
+                storage.edgeRightConstraints.append(constraint)
+            } else if value.builder is RKConstraintLeadingBuilder {
+                storage.edgeLeadingConstraints.append(constraint)
+            } else {
+                storage.edgeTrailingConstraints.append(constraint)
+            }
         }
 
         return constraints

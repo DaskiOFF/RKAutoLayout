@@ -1,95 +1,101 @@
 import UIKit
 
-@available (iOS 9, *)
-public enum RKConstraintEDGE {
-    /// :nodoc:
-    case __top(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __topAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __left(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leftAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leading(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leadingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottom(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottomGreaterOrEqual(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottomAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __right(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __rightAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __trailing(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __trailingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
+public typealias RKConstraintEDGE = RKConstraintEdge
 
-    // MARK: Top
+@available (iOS 9, *)
+public struct RKConstraintEdge {
+    var builder: RKConstraintBuilder
+
+    init(builder: RKConstraintBuilder) {
+        self.builder = builder
+    }
+
+    // MARK: - Top
     public static func top(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__top(offset, priority, isActive)
+        let builder = RKConstraintTopBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func top(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__topAnchor(view.topAnchor, offset, priority, isActive)
+        let builder = RKConstraintTopBuilder(anchor: view.topAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func top(_ anchor: NSLayoutYAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__topAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintTopBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
-    // MARK: Left
+
+    // MARK: - Left
     public static func left(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__left(offset, priority, isActive)
+        let builder = RKConstraintLeftBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func left(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leftAnchor(view.leftAnchor, offset, priority, isActive)
+        let builder = RKConstraintLeftBuilder(anchor: view.leftAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func left(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leftAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintLeftBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
-    // MARK: Leading
+
+    // MARK: - Leading
     public static func leading(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leading(offset, priority, isActive)
+        let builder = RKConstraintLeadingBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func leading(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leadingAnchor(view.leadingAnchor, offset, priority, isActive)
+        let builder = RKConstraintLeadingBuilder(anchor: view.leadingAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func leading(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leadingAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintLeadingBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
-    // MARK: Bottom
+
+    // MARK: - Bottom
     public static func bottom(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottom(offset, priority, isActive)
+        let builder = RKConstraintBottomBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func bottom(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomAnchor(view.bottomAnchor, offset, priority, isActive)
+        let builder = RKConstraintBottomBuilder(anchor: view.bottomAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func bottom(_ anchor: NSLayoutYAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintBottomBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func bottomGreaterOrEqual(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomGreaterOrEqual(offset, priority, isActive)
+        // TODO RK: Реализации нет
+        let builder = RKConstraintBottomBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
-    // MARK: Right
+
+    // MARK: - Right
     public static func right(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__right(offset, priority, isActive)
+        let builder = RKConstraintRightBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func right(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__rightAnchor(view.rightAnchor, offset, priority, isActive)
+        let builder = RKConstraintRightBuilder(anchor: view.rightAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func right(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__rightAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintRightBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
-    // MARK: Trailing
+
+    // MARK: - Trailing
     public static func trailing(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailing(offset, priority, isActive)
+        let builder = RKConstraintTrailingBuilder(anchor: nil, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func trailing(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailingAnchor(view.trailingAnchor, offset, priority, isActive)
+        let builder = RKConstraintTrailingBuilder(anchor: view.trailingAnchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
     public static func trailing(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailingAnchor(anchor, offset, priority, isActive)
+        let builder = RKConstraintTrailingBuilder(anchor: anchor, value: offset, relation: .equal, priority: priority, isActive: isActive)
+        return RKConstraintEdge(builder: builder)
     }
 }

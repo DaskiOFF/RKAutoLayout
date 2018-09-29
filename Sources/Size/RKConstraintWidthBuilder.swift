@@ -3,13 +3,6 @@ import UIKit
 
 @available (iOS 9, *)
 class RKConstraintWidthBuilder: RKConstraintBaseBuilder<NSLayoutDimension>, RKConstraintBuilder {
-    let relation: NSLayoutRelation
-
-    init(anchor: NSLayoutDimension?, value: CGFloat, relation: NSLayoutRelation, priority: RKConstraintPriority, isActive: Bool) {
-        self.relation = relation
-
-        super.init(anchor: anchor, value: value, priority: priority, isActive: isActive)
-    }
 
     // MARK: - RKConstraintBuilder
     func build(withView view: UIView, isActive: Bool) -> RKConstraint {
