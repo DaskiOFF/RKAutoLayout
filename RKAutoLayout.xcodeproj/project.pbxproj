@@ -31,6 +31,10 @@
 		BB83444D216013670011757E /* UIViewExtEdgeMinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83444C216013670011757E /* UIViewExtEdgeMinTests.swift */; };
 		BB83444F216014470011757E /* UIViewExtEdgeMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83444E216014470011757E /* UIViewExtEdgeMaxTests.swift */; };
 		BB834451216016780011757E /* RKConstraintBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834450216016780011757E /* RKConstraintBuilderTests.swift */; };
+		BB834453216026070011757E /* UIView+Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834452216026070011757E /* UIView+Baseline.swift */; };
+		BB834456216026B40011757E /* RKConstraintBaseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834455216026B40011757E /* RKConstraintBaseline.swift */; };
+		BB834458216028C70011757E /* RKConstraintFirstBaselineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834457216028C70011757E /* RKConstraintFirstBaselineBuilder.swift */; };
+		BB83445A216028EE0011757E /* RKConstraintLastBaselineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834459216028EE0011757E /* RKConstraintLastBaselineBuilder.swift */; };
 		BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */; };
 		BBB8FAA820CE5CF300A81120 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* ArrayExt.swift */; };
 		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +85,10 @@
 		BB83444C216013670011757E /* UIViewExtEdgeMinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtEdgeMinTests.swift; sourceTree = "<group>"; };
 		BB83444E216014470011757E /* UIViewExtEdgeMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtEdgeMaxTests.swift; sourceTree = "<group>"; };
 		BB834450216016780011757E /* RKConstraintBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBuilderTests.swift; sourceTree = "<group>"; };
+		BB834452216026070011757E /* UIView+Baseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Baseline.swift"; sourceTree = "<group>"; };
+		BB834455216026B40011757E /* RKConstraintBaseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBaseline.swift; sourceTree = "<group>"; };
+		BB834457216028C70011757E /* RKConstraintFirstBaselineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintFirstBaselineBuilder.swift; sourceTree = "<group>"; };
+		BB834459216028EE0011757E /* RKConstraintLastBaselineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintLastBaselineBuilder.swift; sourceTree = "<group>"; };
 		BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
 		BBB8FA9D20CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -210,6 +218,16 @@
 			path = Edge;
 			sourceTree = "<group>";
 		};
+		BB8344542160269B0011757E /* Baseline */ = {
+			isa = PBXGroup;
+			children = (
+				BB834457216028C70011757E /* RKConstraintFirstBaselineBuilder.swift */,
+				BB834459216028EE0011757E /* RKConstraintLastBaselineBuilder.swift */,
+				BB834455216026B40011757E /* RKConstraintBaseline.swift */,
+			);
+			path = Baseline;
+			sourceTree = "<group>";
+		};
 		BBB8FA8F20CE5CF300A81120 = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +280,7 @@
 				BB54685E215BFF0B00337775 /* Center */,
 				BB546871215D519B00337775 /* Size */,
 				BB834438215F9A6E0011757E /* Edge */,
+				BB8344542160269B0011757E /* Baseline */,
 				BBFD275820CE5D760065BFA1 /* Extensions */,
 				BBFD275E20CE5D760065BFA1 /* RKAL.swift */,
 			);
@@ -276,6 +295,7 @@
 				BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */,
 				BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */,
 				BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */,
+				BB834452216026070011757E /* UIView+Baseline.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -449,9 +469,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFD276020CE5D760065BFA1 /* UIView+AddAll.swift in Sources */,
+				BB834453216026070011757E /* UIView+Baseline.swift in Sources */,
 				BB546867215BFFEB00337775 /* RKConstraintBuilder.swift in Sources */,
 				BB54687A215D5C1400337775 /* RKConstraintWidthBuilder.swift in Sources */,
 				BBFD276420CE5D760065BFA1 /* UIView+Size.swift in Sources */,
+				BB834458216028C70011757E /* RKConstraintFirstBaselineBuilder.swift in Sources */,
 				BB546860215BFF2900337775 /* RKConstraintCenterXBuilder.swift in Sources */,
 				BBFD275F20CE5D760065BFA1 /* SafeAreaCompatibility.swift in Sources */,
 				BBFD276120CE5D760065BFA1 /* UIView+Edge.swift in Sources */,
@@ -461,11 +483,13 @@
 				BB834445215FA8F30011757E /* RKConstraintLeadingBuilder.swift in Sources */,
 				BB83443C215F9B090011757E /* RKConstraintLeftBuilder.swift in Sources */,
 				BB834447215FA8FE0011757E /* RKConstraintRightBuilder.swift in Sources */,
+				BB83445A216028EE0011757E /* RKConstraintLastBaselineBuilder.swift in Sources */,
 				BB834449215FA90A0011757E /* RKConstraintTrailingBuilder.swift in Sources */,
 				BB546864215BFF8300337775 /* RKConstraintCenter.swift in Sources */,
 				BBFD276220CE5D760065BFA1 /* UIView+ConstraintStorage.swift in Sources */,
 				BB83443E215F9B160011757E /* RKConstraintBottomBuilder.swift in Sources */,
 				BB83443A215F9A820011757E /* RKConstraintEdge.swift in Sources */,
+				BB834456216026B40011757E /* RKConstraintBaseline.swift in Sources */,
 				BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */,
 				BB54687C215D5C2000337775 /* RKConstraintHeightBuilder.swift in Sources */,
 				BB546862215BFF3200337775 /* RKConstraintCenterYBuilder.swift in Sources */,
