@@ -261,6 +261,80 @@ class UIViewExtSizeTests: XCTestCase {
         }
     }
 
+    func test_SizeWidthMinMaxDimension_Constant_Priority_ActiveTrue() {
+        let constraints = view!.rk_alSize(.width(min: superview!.heightAnchor, multiplier: 2, priority: .low, isActive: true),
+                                          .width(max: superview!.heightAnchor, multiplier: 3, priority: .high, isActive: true))
+        XCTAssert(constraints.count == 2)
+
+        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
+        XCTAssert(superview!.constraints.count == 2)
+
+        do {
+            let constraint = superview!.constraints.first!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultLow)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .width)
+            XCTAssert(constraint.relation == .greaterThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .height)
+            XCTAssert(constraint.multiplier == 2)
+        }
+
+        do {
+            let constraint = superview!.constraints.last!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultHigh)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .width)
+            XCTAssert(constraint.relation == .lessThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .height)
+            XCTAssert(constraint.multiplier == 3)
+        }
+    }
+
+    func test_SizeWidthMinMaxView_Constant_Priority_ActiveTrue() {
+        let constraints = view!.rk_alSize(.width(min: superview!, multiplier: 2, priority: .low, isActive: true),
+                                          .width(max: superview!, multiplier: 3, priority: .high, isActive: true))
+        XCTAssert(constraints.count == 2)
+
+        XCTAssert(view!.constraintsStorage!.sizeWidthConstraints.count == 2)
+        XCTAssert(superview!.constraints.count == 2)
+
+        do {
+            let constraint = superview!.constraints.first!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultLow)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .width)
+            XCTAssert(constraint.relation == .greaterThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .width)
+            XCTAssert(constraint.multiplier == 2)
+        }
+
+        do {
+            let constraint = superview!.constraints.last!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultHigh)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .width)
+            XCTAssert(constraint.relation == .lessThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .width)
+            XCTAssert(constraint.multiplier == 3)
+        }
+    }
+
     // MARK: - Height
     func test_SizeHeight_Constant_Priority_ActiveFalse() {
         let constraints = view!.rk_alSize(.height(10, priority: .low, isActive: false))
@@ -496,6 +570,80 @@ class UIViewExtSizeTests: XCTestCase {
             XCTAssert(constraint.secondItem == nil)
             XCTAssert(constraint.secondAttribute == .notAnAttribute)
             XCTAssert(constraint.multiplier == 1)
+        }
+    }
+
+    func test_SizeHeightMinMaxDimension_Constant_Priority_ActiveTrue() {
+        let constraints = view!.rk_alSize(.height(min: superview!.widthAnchor, multiplier: 2, priority: .low, isActive: true),
+                                          .height(max: superview!.widthAnchor, multiplier: 3, priority: .high, isActive: true))
+        XCTAssert(constraints.count == 2)
+
+        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(superview!.constraints.count == 2)
+
+        do {
+            let constraint = superview!.constraints.first!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultLow)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .height)
+            XCTAssert(constraint.relation == .greaterThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .width)
+            XCTAssert(constraint.multiplier == 2)
+        }
+
+        do {
+            let constraint = superview!.constraints.last!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultHigh)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .height)
+            XCTAssert(constraint.relation == .lessThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .width)
+            XCTAssert(constraint.multiplier == 3)
+        }
+    }
+
+    func test_SizeHeightMinMaxView_Constant_Priority_ActiveTrue() {
+        let constraints = view!.rk_alSize(.height(min: superview!, multiplier: 2, priority: .low, isActive: true),
+                                          .height(max: superview!, multiplier: 3, priority: .high, isActive: true))
+        XCTAssert(constraints.count == 2)
+
+        XCTAssert(view!.constraintsStorage!.sizeHeightConstraints.count == 2)
+        XCTAssert(superview!.constraints.count == 2)
+
+        do {
+            let constraint = superview!.constraints.first!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultLow)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .height)
+            XCTAssert(constraint.relation == .greaterThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .height)
+            XCTAssert(constraint.multiplier == 2)
+        }
+
+        do {
+            let constraint = superview!.constraints.last!
+            XCTAssert(constraint.constant == 0)
+            XCTAssert(constraint.isActive == true)
+            XCTAssert(constraint.priority == .defaultHigh)
+
+            XCTAssert((constraint.firstItem as! UIView) == view)
+            XCTAssert(constraint.firstAttribute == .height)
+            XCTAssert(constraint.relation == .lessThanOrEqual)
+            XCTAssert((constraint.secondItem as! UIView) == superview!)
+            XCTAssert(constraint.secondAttribute == .height)
+            XCTAssert(constraint.multiplier == 3)
         }
     }
 
