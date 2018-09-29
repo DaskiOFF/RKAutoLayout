@@ -4,7 +4,7 @@ import UIKit
 public extension UIView {
     // MARK: RKAL <ADD> (Constraints)
     @discardableResult
-    public func rk_alAdd(size: [RKConstraintSize] = [], center: [RKConstraintCenter] = [], edge: [RKConstraintEDGE] = [], isActive: Bool = true) -> RKConstraints {
+    public func rk_alAdd(size: [RKConstraintSize] = [], center: [RKConstraintCenter] = [], edge: [RKConstraintEdge] = [], isActive: Bool = true) -> RKConstraints {
         var resultConstraints: RKConstraints = []
 
         resultConstraints += rk_alSize(with: size, isActive: isActive)

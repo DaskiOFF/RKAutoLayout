@@ -4,12 +4,12 @@ import UIKit
 public extension UIView {
     // MARK: RKAL <EDGES> (Constraints)
     @discardableResult
-    public func rk_alEdge(_ values: RKConstraintEDGE..., isActive: Bool = true) -> RKConstraints {
+    public func rk_alEdge(_ values: RKConstraintEdge..., isActive: Bool = true) -> RKConstraints {
         return rk_alEdge(with: values, isActive: isActive)
     }
 
     @discardableResult
-    func rk_alEdge(with values: [RKConstraintEDGE], isActive: Bool = true) -> RKConstraints {
+    func rk_alEdge(with values: [RKConstraintEdge], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
         translatesAutoresizingMaskIntoConstraints = false
 
