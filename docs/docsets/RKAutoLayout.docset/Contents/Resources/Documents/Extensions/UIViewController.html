@@ -14,7 +14,7 @@
     <a title="UIViewController Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RKAutoLayout Docs</a> (20% documented)</p>
+        <p><a href="../index.html">RKAutoLayout Docs</a> (91% documented)</p>
         <p class="header-right"><a href="https://github.com/DaskiOFF/RKAutoLayout"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -32,16 +32,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/RKConstraintSize.html">RKConstraintSize</a>
               </li>
             </ul>
           </li>
@@ -63,10 +54,30 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintBaseline.html">RKConstraintBaseline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintCenter.html">RKConstraintCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintEdge.html">RKConstraintEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintSize.html">RKConstraintSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:12RKAutoLayout12RKConstrainta">RKConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12RKAutoLayout16RKConstraintEDGEa">RKConstraintEDGE</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a>
@@ -110,9 +121,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>с iOS 11 возвращает view.rkSafeAreaLayoutGuide.topAnchor</p>
+                        <p>Return</p>
 
-<p>до iOS 11 возврaщает topLayoutGuide.bottomAnchor</p>
+<ul>
+<li>safeAreaLayoutGuide.topAnchor for &gt;= iOS 11</li>
+<li>topLayoutGuide.bottomAnchor for &lt; iOS 11</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -139,7 +153,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Возвращает view.rkSafeAreaLayoutGuide.leftAnchor</p>
+                        <p>Return view.rkSafeAreaLayoutGuide.leftAnchor</p>
 
                       </div>
                       <div class="declaration">
@@ -147,33 +161,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rkLeftAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So16UIViewControllerC12RKAutoLayoutE15rkLeadingAnchorSo013NSLayoutXAxisG0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/rkLeadingAnchor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So16UIViewControllerC12RKAutoLayoutE15rkLeadingAnchorSo013NSLayoutXAxisG0Cvp">rkLeadingAnchor</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Возвращает view.rkSafeAreaLayoutGuide.leadingAnchor</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rkLeadingAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -193,9 +180,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>с iOS 11 возвращает view.rkSafeAreaLayoutGuide.bottomAnchor</p>
+                        <p>Return</p>
 
-<p>до iOS 11 возврaщает bottomLayoutGuide.topAnchor</p>
+<ul>
+<li>safeAreaLayoutGuide.bottomAnchor for &gt;= iOS 11</li>
+<li>bottomLayoutGuide.topAnchor for &lt; iOS 11</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -222,7 +212,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Возвращает view.rkSafeAreaLayoutGuide.rightAnchor</p>
+                        <p>Return view.rkSafeAreaLayoutGuide.rightAnchor</p>
 
                       </div>
                       <div class="declaration">
@@ -239,9 +229,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So16UIViewControllerC12RKAutoLayoutE016rkTrailingAnchorG0So013NSLayoutXAxisG0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/rkTrailingAnchorAnchor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So16UIViewControllerC12RKAutoLayoutE016rkTrailingAnchorG0So013NSLayoutXAxisG0Cvp">rkTrailingAnchorAnchor</a>
+                    <a name="/s:So16UIViewControllerC12RKAutoLayoutE15rkLeadingAnchorSo013NSLayoutXAxisG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/rkLeadingAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So16UIViewControllerC12RKAutoLayoutE15rkLeadingAnchorSo013NSLayoutXAxisG0Cvp">rkLeadingAnchor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,14 +239,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Возвращает view.rkSafeAreaLayoutGuide.trailingAnchor</p>
+                        <p>Return view.rkSafeAreaLayoutGuide.leadingAnchor</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rkTrailingAnchorAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rkLeadingAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So16UIViewControllerC12RKAutoLayoutE16rkTrailingAnchorSo013NSLayoutXAxisG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/rkTrailingAnchor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So16UIViewControllerC12RKAutoLayoutE16rkTrailingAnchorSo013NSLayoutXAxisG0Cvp">rkTrailingAnchor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return view.rkSafeAreaLayoutGuide.trailingAnchor</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rkTrailingAnchor</span><span class="p">:</span> <span class="kt">NSLayoutXAxisAnchor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

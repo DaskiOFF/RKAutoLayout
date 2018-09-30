@@ -3,11 +3,34 @@ import UIKit
 @available (iOS 9, *)
 public extension UIView {
     // MARK: RKAL <Baseline> (Constraints)
+
+    /// Add baseline constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintBaseline
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alBaseline(.firstBaseline(10), .lastBaseline(min: otherView))
+    ///     view.rk_alBaseline(.firstBaseline(10), .lastBaseline(max: otherView), isActive: false)
     @discardableResult
     public func rk_alBaseline(_ values: RKConstraintBaseline..., isActive: Bool = true) -> RKConstraints {
         return rk_alBaseline(with: values, isActive: isActive)
     }
 
+    /// Add baseline constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintBaseline
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alBaseline(with: [.firstBaseline(10), .lastBaseline(min: otherView)])
+    ///     view.rk_alBaseline(with: [.firstBaseline(10), .lastBaseline(max: otherView)], isActive: false)
     @discardableResult
     func rk_alBaseline(with values: [RKConstraintBaseline], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }

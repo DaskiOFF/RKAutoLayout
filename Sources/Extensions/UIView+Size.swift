@@ -14,7 +14,7 @@ public extension UIView {
     /// Example:
     ///
     ///     view.rk_alSize(.width(10), .height(min: otherView))
-    ///     view.rk_alCenter(.width(10), .height(min: otherView), isActive: false)
+    ///     view.rk_alSize(.width(10), .height(max: otherView), isActive: false)
     @discardableResult
     public func rk_alSize(_ values: RKConstraintSize..., isActive: Bool = true) -> RKConstraints {
         return rk_alSize(with: values, isActive: isActive)
@@ -30,7 +30,7 @@ public extension UIView {
     /// Example:
     ///
     ///     view.rk_alSize(with: [.width(10), .height(min: otherView)])
-    ///     view.rk_alCenter(with: [.width(10), .height(min: otherView)], isActive: false)
+    ///     view.rk_alSize(with: [.width(10), .height(max: otherView)], isActive: false)
     @discardableResult
     func rk_alSize(with values: [RKConstraintSize], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
