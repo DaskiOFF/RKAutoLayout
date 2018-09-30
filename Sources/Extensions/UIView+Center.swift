@@ -3,30 +3,34 @@ import UIKit
 @available (iOS 9, *)
 public extension UIView {
     // MARK: RKAL <CENTER> (Constraints)
-    /// Constraints for center
+
+    /// Add center constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintCenter
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
     ///
     /// Example:
-    /// ```
-    /// view.rk_alCenter(values: [.centerX(100), .centerY(300)])
-    /// ```
-    /// or
-    /// ```
-    /// view.rk_alCenter(values: [.centerX(), .centerY(anotherView.topAnchor)])
     ///
-    /// ```
-    /// or
-    /// ```
-    /// view.rk_alCenter(values: RKConstraintCenter.center(anotherView, offsetX: -100, offsetY: -100))
-    /// ```
-    /// etc.
-    ///
-    /// - Parameter values: RKConstraintSize...
-    /// - Returns: Array of constraints
+    ///     view.rk_alCenter(.centerX(10), .centerY())
+    ///     view.rk_alCenter(.centerX(10), .centerY(), isActive: false)
     @discardableResult
     public func rk_alCenter(_ values: RKConstraintCenter..., isActive: Bool = true) -> RKConstraints {
         return self.rk_alCenter(with: values, isActive: isActive)
     }
 
+    /// Add center constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintCenter
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alCenter(with: [.centerX(10), .centerY()])
+    ///     view.rk_alCenter(with: [.centerX(10), .centerY()], isActive: false)
     @discardableResult
     func rk_alCenter(with values: [RKConstraintCenter], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
@@ -57,15 +61,19 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIView {
     // MARK: - Remove <CENTER>
+
+    /// Remove all center constraints
     public func rk_alRemoveCenterConstraints() {
         rk_alRemoveCenterXConstraints()
         rk_alRemoveCenterYConstraints()
     }
 
+    /// Remove all centerX constraints
     public func rk_alRemoveCenterXConstraints() {
         constraintsStorage.centerXConstraints.removeAllConstraints()
     }
 
+    /// Remove all centerY constraints
     public func rk_alRemoveCenterYConstraints() {
         constraintsStorage.centerYConstraints.removeAllConstraints()
     }

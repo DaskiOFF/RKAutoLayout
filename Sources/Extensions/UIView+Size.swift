@@ -3,30 +3,34 @@ import UIKit
 @available (iOS 9, *)
 public extension UIView {
     // MARK: RKAL <SIZE> (Constraints)
-    /// Constraints for size
+
+    /// Add size constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintSize
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
     ///
     /// Example:
-    /// ```
-    /// view.rk_alSize(values: [.width(50), .height(anotherView, multiplier: 3)])
-    /// ```
-    /// or
-    /// ```
-    /// view.rk_alSize(values: [.width(anotherView.heightAnchor, priority: .low), .height(anotherView)])
     ///
-    /// ```
-    /// or
-    /// ```
-    /// view.rk_alSize(values: [.width(200), .height(min: 60), .height(max: 220)])
-    /// ```
-    /// etc.
-    ///
-    /// - Parameter values: Set<RKConstraintSize>
-    /// - Returns: Array of constraints
+    ///     view.rk_alSize(.width(10), .height(min: otherView))
+    ///     view.rk_alCenter(.width(10), .height(min: otherView), isActive: false)
     @discardableResult
     public func rk_alSize(_ values: RKConstraintSize..., isActive: Bool = true) -> RKConstraints {
         return rk_alSize(with: values, isActive: isActive)
     }
 
+    /// Add size constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintSize
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alSize(with: [.width(10), .height(min: otherView)])
+    ///     view.rk_alCenter(with: [.width(10), .height(min: otherView)], isActive: false)
     @discardableResult
     func rk_alSize(with values: [RKConstraintSize], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
@@ -51,14 +55,19 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIView {
     // MARK: - Remove <SIZE>
+
+    /// Remove all size constraints
     public func rk_alRemoveSizeConstraints() {
         rk_alRemoveSizeWidthConstraints()
         rk_alRemoveSizeHeightConstraints()
     }
+
+    /// Remove all height constraints
     public func rk_alRemoveSizeHeightConstraints() {
         constraintsStorage.sizeHeightConstraints.removeAllConstraints()
     }
 
+    /// Remove all width constraints
     public func rk_alRemoveSizeWidthConstraints() {
         constraintsStorage.sizeWidthConstraints.removeAllConstraints()
     }

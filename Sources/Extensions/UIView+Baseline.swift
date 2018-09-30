@@ -32,14 +32,19 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIView {
     // MARK: - Remove <Baseline>
+
+    /// Remove all baseline constraints
     public func rk_alRemoveBaselineConstraints() {
         rk_alRemoveFirstBaselineConstraints()
         rk_alRemoveLastBaselineConstraints()
     }
+
+    /// Remove all firstBaseline constraints
     public func rk_alRemoveFirstBaselineConstraints() {
         constraintsStorage.firstBaselineConstraints.removeAllConstraints()
     }
 
+    /// Remove all lastBaseline constraints
     public func rk_alRemoveLastBaselineConstraints() {
         constraintsStorage.lastBaselineConstraints.removeAllConstraints()
     }

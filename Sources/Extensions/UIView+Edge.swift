@@ -3,11 +3,34 @@ import UIKit
 @available (iOS 9, *)
 public extension UIView {
     // MARK: RKAL <EDGES> (Constraints)
+
+    /// Add edge constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintEdge
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alEdge(.top(10), .bottom(0))
+    ///     view.rk_alEdge(.top(10), .bottom(-90), isActive: false)
     @discardableResult
     public func rk_alEdge(_ values: RKConstraintEdge..., isActive: Bool = true) -> RKConstraints {
         return rk_alEdge(with: values, isActive: isActive)
     }
 
+    /// Add edge constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintEdge
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alEdge(with: [.top(10), .bottom(0)])
+    ///     view.rk_alEdge(with: [.top(10), .bottom(-90)], isActive: false)
     @discardableResult
     func rk_alEdge(with values: [RKConstraintEdge], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
@@ -36,7 +59,11 @@ public extension UIView {
         return constraints
     }
 
-    /// Constraints for edges superview bounds
+
+    /// Add edges superview bounds
+    ///
+    /// - Parameter isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
     @discardableResult
     public func rk_alEdgeSuperViewBounds(isActive: Bool = true) -> RKConstraints {
         return self.rk_alEdge(.top(0), .left(0), .bottom(0), .right(0), isActive: isActive)
@@ -46,6 +73,8 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIView {
     // MARK: - Remove <EDGES>
+
+    /// Remove all edge constraints
     public func rk_alRemoveAllEdgeConstraints() {
         rk_alRemoveTopConstraints()
         rk_alRemoveLeftConstraints()
@@ -55,21 +84,32 @@ public extension UIView {
         rk_alRemoveTrailingConstraints()
     }
 
+    /// Remove all top constraints
     public func rk_alRemoveTopConstraints() {
         constraintsStorage.edgeTopConstraints.removeAllConstraints()
     }
+
+    /// Remove all left constraints
     public func rk_alRemoveLeftConstraints() {
         constraintsStorage.edgeLeftConstraints.removeAllConstraints()
     }
+
+    /// Remove all bottom constraints
     public func rk_alRemoveBottomConstraints() {
         constraintsStorage.edgeBottomConstraints.removeAllConstraints()
     }
+
+    /// Remove all right constraints
     public func rk_alRemoveRightConstraints() {
         constraintsStorage.edgeRightConstraints.removeAllConstraints()
     }
+
+    /// Remove all leading constraints
     public func rk_alRemoveLeadingConstraints() {
         constraintsStorage.edgeLeadingConstraints.removeAllConstraints()
     }
+
+    /// Remove all trailing constraints
     public func rk_alRemoveTrailingConstraints() {
         constraintsStorage.edgeTrailingConstraints.removeAllConstraints()
     }
