@@ -1,201 +1,69 @@
 import UIKit
 
 @available (iOS 9, *)
-public enum RKConstraintEDGE: Hashable, Equatable {
-    /// :nodoc:
-    case __top(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __topAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __left(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leftAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leading(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __leadingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottom(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottomGreaterOrEqual(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __bottomAnchor(NSLayoutYAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __right(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __rightAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __trailing(CGFloat, RKConstraintPriority, Bool)
-    /// :nodoc:
-    case __trailingAnchor(NSLayoutXAxisAnchor, CGFloat, RKConstraintPriority, Bool)
-
-    /// :nodoc:
-    public var hashValue: Int {
-        switch self {
-        case .__top(_, _, _), .__topAnchor(_, _, _, _): return 1
-        case .__left(_, _, _), .__leftAnchor(_, _, _, _): return 2
-        case .__leading(_, _, _), .__leadingAnchor(_, _, _, _): return 3
-        case .__bottom(_, _, _), .__bottomGreaterOrEqual(_, _, _), .__bottomAnchor(_, _, _, _): return 4
-        case .__right(_, _, _), .__rightAnchor(_, _, _, _): return 5
-        case .__trailing(_, _, _), .__trailingAnchor(_, _, _, _): return 6
-        }
-    }
-
-    /// :nodoc:
-    public static func == (lhs: RKConstraintEDGE, rhs: RKConstraintEDGE) -> Bool {
-        return lhs.hashValue == rhs.hashValue
-    }
-
-    // MARK: Top
-    public static func top(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__top(offset, priority, isActive)
-    }
-    public static func top(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__topAnchor(view.topAnchor, offset, priority, isActive)
-    }
-    public static func top(_ anchor: NSLayoutYAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__topAnchor(anchor, offset, priority, isActive)
-    }
-    // MARK: Left
-    public static func left(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__left(offset, priority, isActive)
-    }
-    public static func left(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leftAnchor(view.leftAnchor, offset, priority, isActive)
-    }
-    public static func left(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leftAnchor(anchor, offset, priority, isActive)
-    }
-    // MARK: Leading
-    public static func leading(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leading(offset, priority, isActive)
-    }
-    public static func leading(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leadingAnchor(view.leadingAnchor, offset, priority, isActive)
-    }
-    public static func leading(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__leadingAnchor(anchor, offset, priority, isActive)
-    }
-    // MARK: Bottom
-    public static func bottom(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottom(offset, priority, isActive)
-    }
-    public static func bottom(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomAnchor(view.bottomAnchor, offset, priority, isActive)
-    }
-    public static func bottom(_ anchor: NSLayoutYAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomAnchor(anchor, offset, priority, isActive)
-    }
-    public static func bottomGreaterOrEqual(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__bottomGreaterOrEqual(offset, priority, isActive)
-    }
-    // MARK: Right
-    public static func right(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__right(offset, priority, isActive)
-    }
-    public static func right(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__rightAnchor(view.rightAnchor, offset, priority, isActive)
-    }
-    public static func right(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__rightAnchor(anchor, offset, priority, isActive)
-    }
-    // MARK: Trailing
-    public static func trailing(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailing(offset, priority, isActive)
-    }
-    public static func trailing(_ view: UIView, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailingAnchor(view.trailingAnchor, offset, priority, isActive)
-    }
-    public static func trailing(_ anchor: NSLayoutXAxisAnchor, offset: CGFloat = 0, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEDGE {
-        return .__trailingAnchor(anchor, offset, priority, isActive)
-    }
-}
-
-@available (iOS 9, *)
 public extension UIView {
     // MARK: RKAL <EDGES> (Constraints)
+
+    /// Add edge constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintEdge
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alEdge(.top(10), .bottom(0))
+    ///     view.rk_alEdge(.top(10), .bottom(-90), isActive: false)
     @discardableResult
-    public func rk_alEdge(_ values: RKConstraintEDGE..., isActive: Bool = true) -> RKConstraints {
+    public func rk_alEdge(_ values: RKConstraintEdge..., isActive: Bool = true) -> RKConstraints {
         return rk_alEdge(with: values, isActive: isActive)
     }
 
+    /// Add edge constraints
+    ///
+    /// - Parameters:
+    ///   - values: List RKConstraintEdge
+    ///   - isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
+    ///
+    /// Example:
+    ///
+    ///     view.rk_alEdge(with: [.top(10), .bottom(0)])
+    ///     view.rk_alEdge(with: [.top(10), .bottom(-90)], isActive: false)
     @discardableResult
-    func rk_alEdge(with values: [RKConstraintEDGE], isActive: Bool = true) -> RKConstraints {
+    func rk_alEdge(with values: [RKConstraintEdge], isActive: Bool = true) -> RKConstraints {
         guard !values.isEmpty else { return [] }
         translatesAutoresizingMaskIntoConstraints = false
 
-        guard let storage = constraintsStorage else {
-            assertionFailure("rk_alEdge: constraintsStorage should not be nil!")
-            return []
-        }
-
-        guard let superview = superview else {
-            assertionFailure("rk_alEdge: superview should not be nil!")
-            return []
-        }
-
         var constraints: RKConstraints = []
-        var constraint: RKConstraint!
         for value in values {
-            switch value {
-            // top
-            case .__top(let offset, let priority, let active):
-                constraint = topAnchor.constraint(equalTo: superview.topAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTopConstraints.append(constraint)
-            case .__topAnchor(let anchor, let offset, let priority, let active):
-                constraint = topAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTopConstraints.append(constraint)
-
-            // left
-            case .__left(let offset, let priority, let active):
-                constraint = leftAnchor.constraint(equalTo: superview.leftAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeftConstraints.append(constraint)
-            case .__leftAnchor(let anchor, let offset, let priority, let active):
-                constraint = leftAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeftConstraints.append(constraint)
-
-            // leading
-            case .__leading(let offset, let priority, let active):
-                constraint = leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeadingConstraints.append(constraint)
-            case .__leadingAnchor(let anchor, let offset, let priority, let active):
-                constraint = leadingAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeLeadingConstraints.append(constraint)
-
-            // bottom
-            case .__bottom(let offset, let priority, let active):
-                constraint = bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            case .__bottomGreaterOrEqual(let offset, let priority, let active):
-                constraint = superview.bottomAnchor.constraint(greaterThanOrEqualTo: bottomAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            case .__bottomAnchor(let anchor, let offset, let priority, let active):
-                constraint = bottomAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeBottomConstraints.append(constraint)
-            // right
-            case .__right(let offset, let priority, let active):
-                constraint = rightAnchor.constraint(equalTo: superview.rightAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeRightConstraints.append(constraint)
-            case .__rightAnchor(let anchor, let offset, let priority, let active):
-                constraint = rightAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeRightConstraints.append(constraint)
-
-            // trailing
-            case .__trailing(let offset, let priority, let active):
-                constraint = trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTrailingConstraints.append(constraint)
-            case .__trailingAnchor(let anchor, let offset, let priority, let active):
-                constraint = trailingAnchor.constraint(equalTo: anchor, constant: offset).set(priority: priority).set(active: active && isActive)
-                storage.edgeTrailingConstraints.append(constraint)
-            }
+            let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
+            if value.builder is RKConstraintTopBuilder {
+                constraintsStorage.edgeTopConstraints.append(constraint)
+            } else if value.builder is RKConstraintLeftBuilder {
+                constraintsStorage.edgeLeftConstraints.append(constraint)
+            } else if value.builder is RKConstraintBottomBuilder {
+                constraintsStorage.edgeBottomConstraints.append(constraint)
+            } else if value.builder is RKConstraintRightBuilder {
+                constraintsStorage.edgeRightConstraints.append(constraint)
+            } else if value.builder is RKConstraintLeadingBuilder {
+                constraintsStorage.edgeLeadingConstraints.append(constraint)
+            } else {
+                constraintsStorage.edgeTrailingConstraints.append(constraint)
+            }
         }
 
         return constraints
     }
 
-    /// Constraints for edges superview bounds
+
+    /// Add edges superview bounds
+    ///
+    /// - Parameter isActive: true, if constraints must be activated, otherwise false
+    /// - Returns: RKConstraints
     @discardableResult
     public func rk_alEdgeSuperViewBounds(isActive: Bool = true) -> RKConstraints {
         return self.rk_alEdge(.top(0), .left(0), .bottom(0), .right(0), isActive: isActive)
@@ -205,6 +73,8 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIView {
     // MARK: - Remove <EDGES>
+
+    /// Remove all edge constraints
     public func rk_alRemoveAllEdgeConstraints() {
         rk_alRemoveTopConstraints()
         rk_alRemoveLeftConstraints()
@@ -214,28 +84,33 @@ public extension UIView {
         rk_alRemoveTrailingConstraints()
     }
 
+    /// Remove all top constraints
     public func rk_alRemoveTopConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTopConstraints.removeAllConstraints()
+        constraintsStorage.edgeTopConstraints.removeAllConstraints()
     }
+
+    /// Remove all left constraints
     public func rk_alRemoveLeftConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeftConstraints.removeAllConstraints()
+        constraintsStorage.edgeLeftConstraints.removeAllConstraints()
     }
+
+    /// Remove all bottom constraints
     public func rk_alRemoveBottomConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeBottomConstraints.removeAllConstraints()
+        constraintsStorage.edgeBottomConstraints.removeAllConstraints()
     }
+
+    /// Remove all right constraints
     public func rk_alRemoveRightConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeRightConstraints.removeAllConstraints()
+        constraintsStorage.edgeRightConstraints.removeAllConstraints()
     }
+
+    /// Remove all leading constraints
     public func rk_alRemoveLeadingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeLeadingConstraints.removeAllConstraints()
+        constraintsStorage.edgeLeadingConstraints.removeAllConstraints()
     }
+
+    /// Remove all trailing constraints
     public func rk_alRemoveTrailingConstraints() {
-        guard let storage = constraintsStorage else { return }
-        storage.edgeTrailingConstraints.removeAllConstraints()
+        constraintsStorage.edgeTrailingConstraints.removeAllConstraints()
     }
 }

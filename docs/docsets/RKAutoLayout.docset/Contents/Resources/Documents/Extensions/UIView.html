@@ -14,7 +14,7 @@
     <a title="UIView Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">RKAutoLayout Docs</a> (20% documented)</p>
+        <p><a href="../index.html">RKAutoLayout Docs</a> (91% documented)</p>
         <p class="header-right"><a href="https://github.com/DaskiOFF/RKAutoLayout"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -32,16 +32,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/RKConstraintSize.html">RKConstraintSize</a>
               </li>
             </ul>
           </li>
@@ -63,10 +54,30 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintBaseline.html">RKConstraintBaseline</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintCenter.html">RKConstraintCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintEdge.html">RKConstraintEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RKConstraintSize.html">RKConstraintSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:12RKAutoLayout12RKConstrainta">RKConstraint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12RKAutoLayout16RKConstraintEDGEa">RKConstraintEDGE</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a>
@@ -100,9 +111,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeOG4size_SayAC0I6CenterOG6centerSayAC0I4EDGEOG4edgeSb8isActivetF"></a>
-                    <a name="//apple_ref/swift/Method/rk_alAdd(size:center:edge:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeOG4size_SayAC0I6CenterOG6centerSayAC0I4EDGEOG4edgeSb8isActivetF">rk_alAdd(size:center:edge:isActive:)</a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeVG4size_SayAC0I6CenterVG6centerSayAC0I4EdgeVG4edgeSayAC0I8BaselineVG8baselineSb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alAdd(size:center:edge:baseline:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE8rk_alAddSaySo18NSLayoutConstraintCGSayAC16RKConstraintSizeVG4size_SayAC0I6CenterVG6centerSayAC0I4EdgeVG4edgeSayAC0I8BaselineVG8baselineSb8isActivetF">rk_alAdd(size:center:edge:baseline:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -110,7 +121,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add several types constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span> <span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">()])</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">()],</span> <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">)])</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -118,7 +134,322 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alAdd</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alAdd</span><span class="p">(</span>
+  <span class="nv">size</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+  <span class="nv">center</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+  <span class="nv">edge</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintEdge.html">RKConstraintEdge</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+  <span class="nv">baseline</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintBaseline.html">RKConstraintBaseline</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+  <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RKConstraintSize objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>center</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RKConstraintCenter objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>edge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RKConstraintEdge objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>baseline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RKConstraintBaseline objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RKAL%20%3CBaseline%3E%20(Constraints)"></a>
+                <a name="//apple_ref/swift/Section/RKAL &lt;Baseline&gt; (Constraints)" class="dashAnchor"></a>
+                <a href="#/RKAL%20%3CBaseline%3E%20(Constraints)">
+                  <h3 class="section-name">RKAL &lt;Baseline&gt; (Constraints)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE13rk_alBaselineSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alBaseline(_:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE13rk_alBaselineSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF">rk_alBaseline(_:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add baseline constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alBaseline</span><span class="p">(</span><span class="o">.</span><span class="nf">firstBaseline</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">lastBaseline</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="n">otherView</span><span class="p">))</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alBaseline</span><span class="p">(</span><span class="o">.</span><span class="nf">firstBaseline</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">lastBaseline</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="n">otherView</span><span class="p">),</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/RKConstraintBaseline.html">RKConstraintBaseline</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintBaseline</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE13rk_alBaselineSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alBaseline(with:isActive:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE13rk_alBaselineSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF">rk_alBaseline(with:isActive:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add baseline constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alBaseline</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">firstBaseline</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">lastBaseline</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="n">otherView</span><span class="p">)])</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alBaseline</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">firstBaseline</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">lastBaseline</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="n">otherView</span><span class="p">)],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">rk_alBaseline</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintBaseline.html">RKConstraintBaseline</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintBaseline</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remove%20%3CBaseline%3E"></a>
+                <a name="//apple_ref/swift/Section/Remove &lt;Baseline&gt;" class="dashAnchor"></a>
+                <a href="#/Remove%20%3CBaseline%3E">
+                  <h3 class="section-name">Remove &lt;Baseline&gt;</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE30rk_alRemoveBaselineConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveBaselineConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE30rk_alRemoveBaselineConstraintsyyF">rk_alRemoveBaselineConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all baseline constraints</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveBaselineConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE35rk_alRemoveFirstBaselineConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveFirstBaselineConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE35rk_alRemoveFirstBaselineConstraintsyyF">rk_alRemoveFirstBaselineConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all firstBaseline constraints</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveFirstBaselineConstraints</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE34rk_alRemoveLastBaselineConstraintsyyF"></a>
+                    <a name="//apple_ref/swift/Method/rk_alRemoveLastBaselineConstraints()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE34rk_alRemoveLastBaselineConstraintsyyF">rk_alRemoveLastBaselineConstraints()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all lastBaseline constraints</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alRemoveLastBaselineConstraints</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -139,9 +470,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alCenter(_:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF">rk_alCenter(_:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF">rk_alCenter(_:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -149,22 +480,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Constraints for center</p>
+                        <p>Add center constraints</p>
 
 <p>Example:</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="mi">300</span><span class="p">)])</span>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">())</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(),</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
 </code></pre>
-
-<p>or</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">topAnchor</span><span class="p">)])</span>
-
-</code></pre>
-
-<p>or</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="kt">RKConstraintCenter</span><span class="o">.</span><span class="nf">center</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">offsetX</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="nv">offsetY</span><span class="p">:</span> <span class="o">-</span><span class="mi">100</span><span class="p">))</span>
-</code></pre>
-
-<p>etc.</p>
 
                       </div>
                       <div class="declaration">
@@ -172,7 +493,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
                       </div>
@@ -188,7 +509,19 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>RKConstraintSize&hellip;</p>
+                                  <p>List RKConstraintCenter</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
                                 </div>
                               </td>
                             </tr>
@@ -197,7 +530,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Array of constraints</p>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -205,9 +538,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alCenter(with:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF">rk_alCenter(with:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE11rk_alCenterSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF">rk_alCenter(with:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -215,7 +548,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add center constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">()])</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alCenter</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">centerX</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">centerY</span><span class="p">()],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -223,9 +561,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">func</span> <span class="nf">rk_alCenter</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintCenter.html">RKConstraintCenter</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintCenter</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -282,7 +655,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all center constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -309,7 +682,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all centerX constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -336,7 +709,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all centerY constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -364,9 +737,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC16RKConstraintEDGEOd_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alEdge(_:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC16RKConstraintEDGEOd_Sb8isActivetF">rk_alEdge(_:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF">rk_alEdge(_:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -374,7 +747,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add edge constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">),</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -382,9 +760,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/RKConstraintEdge.html">RKConstraintEdge</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintEdge</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -392,9 +805,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC16RKConstraintEDGEOG4with_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alEdge(with:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC16RKConstraintEDGEOG4with_Sb8isActivetF">rk_alEdge(with:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alEdgeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF">rk_alEdge(with:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -402,7 +815,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add edge constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="mi">0</span><span class="p">)])</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alEdge</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">top</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">bottom</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">)],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -410,9 +828,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintEDGE.html">RKConstraintEDGE</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">func</span> <span class="nf">rk_alEdge</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintEdge.html">RKConstraintEdge</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintEdge</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -430,7 +883,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Constraints for edges superview bounds</p>
+                        <p>Add edges superview bounds</p>
 
                       </div>
                       <div class="declaration">
@@ -441,6 +894,29 @@
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alEdgeSuperViewBounds</span><span class="p">(</span><span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -469,7 +945,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all edge constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -496,7 +972,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all top constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -523,7 +999,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all left constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -550,7 +1026,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all bottom constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -577,7 +1053,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all right constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -604,7 +1080,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all leading constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -631,7 +1107,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all trailing constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -659,9 +1135,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alSize(_:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Od_Sb8isActivetF">rk_alSize(_:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGAC012RKConstraintF0Vd_Sb8isActivetF">rk_alSize(_:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -669,22 +1145,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Constraints for size</p>
+                        <p>Add size constraints</p>
 
 <p>Example:</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">,</span> <span class="nv">multiplier</span><span class="p">:</span> <span class="mi">3</span><span class="p">)])</span>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="n">otherView</span><span class="p">))</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="n">otherView</span><span class="p">),</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
 </code></pre>
-
-<p>or</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="n">anotherView</span><span class="o">.</span><span class="n">heightAnchor</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="o">.</span><span class="n">low</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="n">anotherView</span><span class="p">)])</span>
-
-</code></pre>
-
-<p>or</p>
-<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="mi">60</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="mi">220</span><span class="p">)])</span>
-</code></pre>
-
-<p>etc.</p>
 
                       </div>
                       <div class="declaration">
@@ -692,7 +1158,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt"><a href="../Structs/RKConstraintSize.html">RKConstraintSize</a></span><span class="o">...</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
                       </div>
@@ -708,7 +1174,19 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Set<RKConstraintSize></p>
+                                  <p>List RKConstraintSize</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
                                 </div>
                               </td>
                             </tr>
@@ -717,7 +1195,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Array of constraints</p>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -725,9 +1203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF"></a>
+                    <a name="/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF"></a>
                     <a name="//apple_ref/swift/Method/rk_alSize(with:isActive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0OG4with_Sb8isActivetF">rk_alSize(with:isActive:)</a>
+                    <a class="token" href="#/s:So6UIViewC12RKAutoLayoutE9rk_alSizeSaySo18NSLayoutConstraintCGSayAC012RKConstraintF0VG4with_Sb8isActivetF">rk_alSize(with:isActive:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -735,7 +1213,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add size constraints</p>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">min</span><span class="p">:</span> <span class="n">otherView</span><span class="p">)])</span>
+<span class="n">view</span><span class="o">.</span><span class="nf">rk_alSize</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="o">.</span><span class="nf">height</span><span class="p">(</span><span class="nv">max</span><span class="p">:</span> <span class="n">otherView</span><span class="p">)],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kc">false</span><span class="p">)</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -743,9 +1226,44 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
+<span class="kd">func</span> <span class="nf">rk_alSize</span><span class="p">(</span><span class="n">with</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RKConstraintSize.html">RKConstraintSize</a></span><span class="p">],</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:12RKAutoLayout13RKConstraintsa">RKConstraints</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List RKConstraintSize</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isActive</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true, if constraints must be activated, otherwise false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>RKConstraints</p>
                       </div>
                     </section>
                   </div>
@@ -774,7 +1292,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all size constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -801,7 +1319,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all height constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -828,7 +1346,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Remove all width constraints</p>
 
                       </div>
                       <div class="declaration">
@@ -866,9 +1384,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>с iOS 11 возвращает safeAreaLayoutGuide</p>
+                        <p>Return</p>
 
-<p>до iOS 11 возврaщает layoutGuides.first ?? layoutMarginsGuide</p>
+<ul>
+<li>safeAreaLayoutGuide for &gt;= iOS 11</li>
+<li>layoutGuides.first ?? layoutMarginsGuide for &lt; iOS 11</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -896,13 +1417,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>с iOS 11 возвращает safeAreaInsets;</p>
+                        <p>Return</p>
 
-<p>до iOS 11 возврaщает UIEdgeInsets(top: x, left: 0, bottom: y, right: 0)</p>
+<ul>
+<li>safeAreaInsets for &gt;= iOS 11</li>
+<li>UIEdgeInsets(top: x, left: 0, bottom: y, right: 0) for &lt; iOS 11</li>
+</ul>
 
-<p>где x – отступ сверху зависящий от statusBar и NavigationBar</p>
+<p>where:</p>
 
-<p>где y – отступ снизу зависящий от TabBar</p>
+<ul>
+<li>x – maxY for NavigationBar or maxY for StatusBar</li>
+<li>y – minY for TabBar</li>
+</ul>
 
                       </div>
                       <div class="declaration">

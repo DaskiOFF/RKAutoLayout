@@ -11,6 +11,8 @@ class RKConstraintsStorage {
     var edgeRightConstraints: RKConstraints = []
     var edgeLeadingConstraints: RKConstraints = []
     var edgeTrailingConstraints: RKConstraints = []
+    var firstBaselineConstraints: RKConstraints = []
+    var lastBaselineConstraints: RKConstraints = []
 }
 
 private var ___constraintsStorage: UInt = 0
@@ -26,7 +28,7 @@ extension UIView {
         }
     }
 
-    var constraintsStorage: RKConstraintsStorage? {
+    var constraintsStorage: RKConstraintsStorage {
         get {
             if let storage = __constraintsStorage {
                 return storage
