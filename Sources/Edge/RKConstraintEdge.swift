@@ -142,7 +142,7 @@ public struct RKConstraintEdge {
     }
 
     // MARK: Min
-    @available(*, deprecated, message: "RKConstraintEdge.bottomGreaterOrEqual will be removed in a future major lib version. Use RKConstraintEdge.bottom(min:...)")
+    @available(*, deprecated, message: "RKConstraintEdge.bottomGreaterOrEqual will be removed in a future lib version. Use RKConstraintEdge.bottom(min:...)")
     public static func bottomGreaterOrEqual(_ offset: CGFloat, priority: RKConstraintPriority = .required, isActive: Bool = true) -> RKConstraintEdge {
         return RKConstraintEdge.bottom(min: offset, priority: priority, isActive: isActive)
     }
