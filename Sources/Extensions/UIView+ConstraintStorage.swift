@@ -11,6 +11,8 @@ class RKConstraintsStorage {
     var edgeRightConstraints: RKConstraints = []
     var edgeLeadingConstraints: RKConstraints = []
     var edgeTrailingConstraints: RKConstraints = []
+    var firstBaselineConstraints: RKConstraints = []
+    var lastBaselineConstraints: RKConstraints = []
 }
 
 private var ___constraintsStorage: UInt = 0

@@ -144,6 +144,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 2)
     }
 
+    // MARK: Min
     func test_SizeWidthMin_Constant_Priority_ActiveFalse() {
         let constraints = view!.rk_alSize(.width(min: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
@@ -184,6 +185,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 1)
     }
 
+    // MARK: Max
     func test_SizeWidthMax_Constant_Priority_ActiveFalse() {
         let constraints = view!.rk_alSize(.width(max: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
@@ -224,6 +226,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 1)
     }
 
+    // MARK: Min Max
     func test_SizeWidthMinMax_Constant_Priority_ActiveTrue() {
         let constraints = view!.rk_alSize(.width(min: 10, priority: .low, isActive: true),
                                           .width(max: 100, priority: .high, isActive: true))
@@ -456,6 +459,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 2)
     }
 
+    // MARK: Min
     func test_SizeHeightMin_Constant_Priority_ActiveFalse() {
         let constraints = view!.rk_alSize(.height(min: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
@@ -496,6 +500,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 1)
     }
 
+    // MARK: Max
     func test_SizeHeightMax_Constant_Priority_ActiveFalse() {
         let constraints = view!.rk_alSize(.height(max: 10, priority: .low, isActive: false))
         XCTAssert(constraints.count == 1)
@@ -536,6 +541,7 @@ class UIViewExtSizeTests: XCTestCase {
         XCTAssert(constraint.multiplier == 1)
     }
 
+    // MARK: Min Max
     func test_SizeHeightMinMax_Constant_Priority_ActiveTrue() {
         let constraints = view!.rk_alSize(.height(min: 10, priority: .low, isActive: true),
                                           .height(max: 100, priority: .high, isActive: true))
