@@ -3,9 +3,9 @@ import RKUIExtensions
 
 public extension UIView {
     // MARK: - SafeArea
-    /// с iOS 11 возвращает safeAreaLayoutGuide
-    ///
-    /// до iOS 11 возврaщает layoutGuides.first ?? layoutMarginsGuide
+    /// Return
+    /// - safeAreaLayoutGuide for >= iOS 11
+    /// - layoutGuides.first ?? layoutMarginsGuide for < iOS 11
     @available (iOS 9, *)
     public var rkSafeAreaLayoutGuide: UILayoutGuide {
         if #available(iOS 11.0, *) {
@@ -15,13 +15,13 @@ public extension UIView {
         }
     }
     
-    /// с iOS 11 возвращает safeAreaInsets;
+    /// Return
+    /// - safeAreaInsets for >= iOS 11
+    /// - UIEdgeInsets(top: x, left: 0, bottom: y, right: 0) for < iOS 11
     ///
-    /// до iOS 11 возврaщает UIEdgeInsets(top: x, left: 0, bottom: y, right: 0)
-    ///
-    /// где x – отступ сверху зависящий от statusBar и NavigationBar
-    ///
-    /// где y – отступ снизу зависящий от TabBar
+    /// where:
+    /// - x – maxY for NavigationBar or maxY for StatusBar
+    /// - y – minY for TabBar
     @available (iOS 8, *)
     public var rkSafeAreaInsets: UIEdgeInsets {
         if #available(iOS 11.0, *) {
@@ -51,9 +51,9 @@ public extension UIView {
 @available (iOS 9, *)
 public extension UIViewController {
     // MARK: - SafeArea
-    /// с iOS 11 возвращает view.rkSafeAreaLayoutGuide.topAnchor
-    ///
-    /// до iOS 11 возврaщает topLayoutGuide.bottomAnchor
+    /// Return
+    /// - safeAreaLayoutGuide.topAnchor for >= iOS 11
+    /// - topLayoutGuide.bottomAnchor for < iOS 11
     public var rkTopAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11, *) {
             return view.rkSafeAreaLayoutGuide.topAnchor
@@ -62,19 +62,14 @@ public extension UIViewController {
         }
     }
 
-    /// Возвращает view.rkSafeAreaLayoutGuide.leftAnchor
+    /// Return view.rkSafeAreaLayoutGuide.leftAnchor
     public var rkLeftAnchor: NSLayoutXAxisAnchor {
         return view.rkSafeAreaLayoutGuide.leftAnchor
     }
 
-    /// Возвращает view.rkSafeAreaLayoutGuide.leadingAnchor
-    public var rkLeadingAnchor: NSLayoutXAxisAnchor {
-        return view.rkSafeAreaLayoutGuide.leadingAnchor
-    }
-    
-    /// с iOS 11 возвращает view.rkSafeAreaLayoutGuide.bottomAnchor
-    ///
-    /// до iOS 11 возврaщает bottomLayoutGuide.topAnchor
+    /// Return
+    /// - safeAreaLayoutGuide.bottomAnchor for >= iOS 11
+    /// - bottomLayoutGuide.topAnchor for < iOS 11
     public var rkBottomAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11, *) {
             return view.rkSafeAreaLayoutGuide.bottomAnchor
@@ -83,13 +78,18 @@ public extension UIViewController {
         }
     }
 
-    /// Возвращает view.rkSafeAreaLayoutGuide.rightAnchor
+    /// Return view.rkSafeAreaLayoutGuide.rightAnchor
     public var rkRightAnchor: NSLayoutXAxisAnchor {
         return view.rkSafeAreaLayoutGuide.rightAnchor
     }
 
-    /// Возвращает view.rkSafeAreaLayoutGuide.trailingAnchor
-    public var rkTrailingAnchorAnchor: NSLayoutXAxisAnchor {
+    /// Return view.rkSafeAreaLayoutGuide.leadingAnchor
+    public var rkLeadingAnchor: NSLayoutXAxisAnchor {
+        return view.rkSafeAreaLayoutGuide.leadingAnchor
+    }
+
+    /// Return view.rkSafeAreaLayoutGuide.trailingAnchor
+    public var rkTrailingAnchor: NSLayoutXAxisAnchor {
         return view.rkSafeAreaLayoutGuide.trailingAnchor
     }
 }
