@@ -29,8 +29,12 @@ class UIViewExtAddAllTests: XCTestCase {
     }
 
     func test_AddAll() {
-        let constraints = view!.rk_alAdd(size: [.width(10), .height(20)], center: [.centerX(), .centerY()], edge: [.top(0), .left(0), .bottom(0), .right(0)])
-        XCTAssert(constraints.count == 8)
+        let constraints = view!.rk_alAdd(
+            size: [.width(10), .height(20)],
+            center: [.centerX(), .centerY()],
+            edge: [.top(0), .left(0), .bottom(0), .right(0)],
+            baseline: [.firstBaseline(10), .lastBaseline(10)])
+        XCTAssert(constraints.count == 10)
 
         XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 1)
         XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 1)
@@ -42,6 +46,9 @@ class UIViewExtAddAllTests: XCTestCase {
         XCTAssert(view!.constraintsStorage.edgeLeftConstraints.count == 1)
         XCTAssert(view!.constraintsStorage.edgeBottomConstraints.count == 1)
         XCTAssert(view!.constraintsStorage.edgeRightConstraints.count == 1)
+
+        XCTAssert(view!.constraintsStorage.firstBaselineConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.lastBaselineConstraints.count == 1)
     }
 
     func test_AddSize() {
@@ -58,6 +65,9 @@ class UIViewExtAddAllTests: XCTestCase {
         XCTAssert(view!.constraintsStorage.edgeLeftConstraints.count == 0)
         XCTAssert(view!.constraintsStorage.edgeBottomConstraints.count == 0)
         XCTAssert(view!.constraintsStorage.edgeRightConstraints.count == 0)
+
+        XCTAssert(view!.constraintsStorage.firstBaselineConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.lastBaselineConstraints.count == 0)
     }
 
     func test_AddCenter() {
@@ -74,6 +84,9 @@ class UIViewExtAddAllTests: XCTestCase {
         XCTAssert(view!.constraintsStorage.edgeLeftConstraints.count == 0)
         XCTAssert(view!.constraintsStorage.edgeBottomConstraints.count == 0)
         XCTAssert(view!.constraintsStorage.edgeRightConstraints.count == 0)
+
+        XCTAssert(view!.constraintsStorage.firstBaselineConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.lastBaselineConstraints.count == 0)
     }
 
     func test_AddEdge() {
@@ -90,5 +103,27 @@ class UIViewExtAddAllTests: XCTestCase {
         XCTAssert(view!.constraintsStorage.edgeLeftConstraints.count == 1)
         XCTAssert(view!.constraintsStorage.edgeBottomConstraints.count == 1)
         XCTAssert(view!.constraintsStorage.edgeRightConstraints.count == 1)
+
+        XCTAssert(view!.constraintsStorage.firstBaselineConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.lastBaselineConstraints.count == 0)
+    }
+
+    func test_AddBaseline() {
+        let constraints = view!.rk_alAdd(baseline: [.firstBaseline(0), .lastBaseline(0)])
+        XCTAssert(constraints.count == 2)
+
+        XCTAssert(view!.constraintsStorage.sizeWidthConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.sizeHeightConstraints.count == 0)
+
+        XCTAssert(view!.constraintsStorage.centerXConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.centerYConstraints.count == 0)
+
+        XCTAssert(view!.constraintsStorage.edgeTopConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.edgeLeftConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.edgeBottomConstraints.count == 0)
+        XCTAssert(view!.constraintsStorage.edgeRightConstraints.count == 0)
+
+        XCTAssert(view!.constraintsStorage.firstBaselineConstraints.count == 1)
+        XCTAssert(view!.constraintsStorage.lastBaselineConstraints.count == 1)
     }
 }
