@@ -35,10 +35,10 @@ public extension UIView {
             }
             
             if let topVC = UIApplication.shared.topViewController {
-                if let nc = topVC.navigationController, !nc.isNavigationBarHidden {
+                if let nc = topVC.navigationController, !nc.isNavigationBarHidden && nc.navigationBar.isTranslucent {
                     topInset += nc.navigationBar.frame.height
                 }
-                if let tc = topVC.tabBarController, !tc.tabBar.isHidden {
+                if let tc = topVC.tabBarController, !tc.tabBar.isHidden && tc.tabBar.isTranslucent {
                     bottomInset += tc.tabBar.frame.height
                 }
             }
