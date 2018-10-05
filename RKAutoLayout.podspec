@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RKAutoLayout'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Easy Auto Layout'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   Easy Auto Layout
+
+  0.2.1
+    Fix safearea for iOS < 11. Update docs
   
   0.2.0
     Update codebase and add support other constraints
