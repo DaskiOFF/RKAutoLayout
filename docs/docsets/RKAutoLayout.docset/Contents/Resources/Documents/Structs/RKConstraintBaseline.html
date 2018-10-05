@@ -129,7 +129,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">constant</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -157,7 +157,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -169,7 +169,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -203,7 +203,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -231,7 +231,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -243,7 +243,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -255,7 +255,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -289,7 +289,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -317,7 +317,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -329,7 +329,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -341,7 +341,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -397,7 +397,7 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>offset</em>
+                                <em>min</em>
                                 </code>
                               </td>
                               <td>
@@ -414,7 +414,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -426,7 +426,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -460,7 +460,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -488,7 +488,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -500,7 +500,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -512,7 +512,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -546,7 +546,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -574,7 +574,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -586,7 +586,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -598,7 +598,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -654,7 +654,7 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>offset</em>
+                                <em>max</em>
                                 </code>
                               </td>
                               <td>
@@ -671,7 +671,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -683,7 +683,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -717,7 +717,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -745,7 +745,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -757,7 +757,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -769,7 +769,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -803,7 +803,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">firstBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -831,7 +831,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -843,7 +843,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -855,7 +855,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -900,7 +900,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">constant</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -928,7 +928,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -940,7 +940,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -974,7 +974,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1002,7 +1002,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1014,7 +1014,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1026,7 +1026,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1060,7 +1060,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1088,7 +1088,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1100,7 +1100,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1112,7 +1112,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1168,7 +1168,7 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>offset</em>
+                                <em>min</em>
                                 </code>
                               </td>
                               <td>
@@ -1185,7 +1185,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1197,7 +1197,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1231,7 +1231,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1259,7 +1259,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1271,7 +1271,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1283,7 +1283,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1317,7 +1317,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">min</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1345,7 +1345,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1357,7 +1357,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1369,7 +1369,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1425,7 +1425,7 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>offset</em>
+                                <em>max</em>
                                 </code>
                               </td>
                               <td>
@@ -1442,7 +1442,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1454,7 +1454,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1488,7 +1488,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">anchor</span><span class="p">:</span> <span class="kt">NSLayoutYAxisAnchor</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1516,7 +1516,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1528,7 +1528,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1540,7 +1540,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
@@ -1574,7 +1574,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lastBaseline</span><span class="p">(</span><span class="n">max</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Enums/RKConstraintPriority.html">RKConstraintPriority</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">required</span><span class="p">,</span> <span class="nv">isActive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RKConstraintBaseline</span></code></pre>
 
                         </div>
                       </div>
@@ -1602,7 +1602,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint constant</p>
+                                  <p>Constraint constant. Default 0</p>
                                 </div>
                               </td>
                             </tr>
@@ -1614,7 +1614,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Constraint priority</p>
+                                  <p>Constraint priority. Default .required</p>
                                 </div>
                               </td>
                             </tr>
@@ -1626,7 +1626,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>true, if constraint must be activated, otherwise false</p>
+                                  <p>true, if constraint must be activated, otherwise false. Default true</p>
                                 </div>
                               </td>
                             </tr>
