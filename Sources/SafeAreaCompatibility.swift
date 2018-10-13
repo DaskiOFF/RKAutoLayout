@@ -1,17 +1,16 @@
 import UIKit
-import RKUIExtensions
 
 public extension UIView {
     // MARK: - SafeArea
     /// Return
     /// - safeAreaLayoutGuide for >= iOS 11
-    /// - layoutGuides.first ?? layoutMarginsGuide for < iOS 11
+    /// - layoutMarginsGuide for < iOS 11
     @available (iOS 9, *)
     public var rkSafeAreaLayoutGuide: UILayoutGuide {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide
         } else {
-            return layoutGuides.first ?? layoutMarginsGuide
+            return layoutMarginsGuide
         }
     }
     

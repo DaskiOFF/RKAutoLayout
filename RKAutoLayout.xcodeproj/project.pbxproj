@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C925FA1AAC0B049713EAED2 /* Pods_RKAutoLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */; };
 		BB546860215BFF2900337775 /* RKConstraintCenterXBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54685F215BFF2900337775 /* RKConstraintCenterXBuilder.swift */; };
 		BB546862215BFF3200337775 /* RKConstraintCenterYBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546861215BFF3200337775 /* RKConstraintCenterYBuilder.swift */; };
 		BB546864215BFF8300337775 /* RKConstraintCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546863215BFF8300337775 /* RKConstraintCenter.swift */; };
@@ -20,6 +19,7 @@
 		BB546878215D529C00337775 /* UIViewExtSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546877215D529C00337775 /* UIViewExtSizeTests.swift */; };
 		BB54687A215D5C1400337775 /* RKConstraintWidthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB546879215D5C1400337775 /* RKConstraintWidthBuilder.swift */; };
 		BB54687C215D5C2000337775 /* RKConstraintHeightBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54687B215D5C2000337775 /* RKConstraintHeightBuilder.swift */; };
+		BB54D8E4217276FB00CAF502 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB54D8E3217276FB00CAF502 /* UIApplication.swift */; };
 		BB83443A215F9A820011757E /* RKConstraintEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834439215F9A820011757E /* RKConstraintEdge.swift */; };
 		BB83443C215F9B090011757E /* RKConstraintLeftBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83443B215F9B090011757E /* RKConstraintLeftBuilder.swift */; };
 		BB83443E215F9B160011757E /* RKConstraintBottomBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83443D215F9B160011757E /* RKConstraintBottomBuilder.swift */; };
@@ -47,7 +47,6 @@
 		BBFD276320CE5D760065BFA1 /* UIView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */; };
 		BBFD276420CE5D760065BFA1 /* UIView+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */; };
 		BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFD275E20CE5D760065BFA1 /* RKAL.swift */; };
-		DAB30E286AECFBD8C29E851C /* Pods_RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
-		808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
 		BB54685F215BFF2900337775 /* RKConstraintCenterXBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenterXBuilder.swift; sourceTree = "<group>"; };
 		BB546861215BFF3200337775 /* RKConstraintCenterYBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenterYBuilder.swift; sourceTree = "<group>"; };
 		BB546863215BFF8300337775 /* RKConstraintCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintCenter.swift; sourceTree = "<group>"; };
@@ -76,6 +72,7 @@
 		BB546877215D529C00337775 /* UIViewExtSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtSizeTests.swift; sourceTree = "<group>"; };
 		BB546879215D5C1400337775 /* RKConstraintWidthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintWidthBuilder.swift; sourceTree = "<group>"; };
 		BB54687B215D5C2000337775 /* RKConstraintHeightBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintHeightBuilder.swift; sourceTree = "<group>"; };
+		BB54D8E3217276FB00CAF502 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		BB834439215F9A820011757E /* RKConstraintEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintEdge.swift; sourceTree = "<group>"; };
 		BB83443B215F9B090011757E /* RKConstraintLeftBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintLeftBuilder.swift; sourceTree = "<group>"; };
 		BB83443D215F9B160011757E /* RKConstraintBottomBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBottomBuilder.swift; sourceTree = "<group>"; };
@@ -106,9 +103,6 @@
 		BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Center.swift"; sourceTree = "<group>"; };
 		BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Size.swift"; sourceTree = "<group>"; };
 		BBFD275E20CE5D760065BFA1 /* RKAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKAL.swift; sourceTree = "<group>"; };
-		CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKAutoLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKAutoLayout/Pods-RKAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB30E286AECFBD8C29E851C /* Pods_RKAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */,
-				6C925FA1AAC0B049713EAED2 /* Pods_RKAutoLayoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,21 +127,8 @@
 		338D614CDA8D485E7CAC52CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D6E39BE5642A6301965E812 /* Pods_RKAutoLayout.framework */,
-				DE6B90E541CE897599DBB2D7 /* Pods_RKAutoLayoutTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A63165EC9C3D564C6EE36A3D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */,
-				808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */,
-				CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */,
-				4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		BB54685E215BFF0B00337775 /* Center */ = {
@@ -196,6 +175,14 @@
 				BB546877215D529C00337775 /* UIViewExtSizeTests.swift */,
 			);
 			path = Size;
+			sourceTree = "<group>";
+		};
+		BB54D8E2217276E400CAF502 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				BB54D8E3217276FB00CAF502 /* UIApplication.swift */,
+			);
+			path = UIApplication;
 			sourceTree = "<group>";
 		};
 		BB834438215F9A6E0011757E /* Edge */ = {
@@ -248,7 +235,6 @@
 				BBB8FAA620CE5CF300A81120 /* RKAutoLayoutTests */,
 				BBB8FA9A20CE5CF300A81120 /* Products */,
 				338D614CDA8D485E7CAC52CC /* Frameworks */,
-				A63165EC9C3D564C6EE36A3D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -305,11 +291,12 @@
 			isa = PBXGroup;
 			children = (
 				BBFD275920CE5D760065BFA1 /* UIView+AddAll.swift */,
-				BBFD275A20CE5D760065BFA1 /* UIView+Edge.swift */,
-				BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */,
-				BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */,
-				BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */,
 				BB834452216026070011757E /* UIView+Baseline.swift */,
+				BBFD275C20CE5D760065BFA1 /* UIView+Center.swift */,
+				BBFD275B20CE5D760065BFA1 /* UIView+ConstraintStorage.swift */,
+				BBFD275A20CE5D760065BFA1 /* UIView+Edge.swift */,
+				BBFD275D20CE5D760065BFA1 /* UIView+Size.swift */,
+				BB54D8E2217276E400CAF502 /* UIApplication */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,7 +319,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBB8FAAD20CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayout" */;
 			buildPhases = (
-				5E8BF6328DC525CF2F641FA1 /* [CP] Check Pods Manifest.lock */,
 				BBB8FA9420CE5CF300A81120 /* Sources */,
 				BBB8FA9520CE5CF300A81120 /* Frameworks */,
 				BBB8FA9620CE5CF300A81120 /* Headers */,
@@ -351,11 +337,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBB8FAB020CE5CF300A81120 /* Build configuration list for PBXNativeTarget "RKAutoLayoutTests" */;
 			buildPhases = (
-				34E7538B641CC569983E122A /* [CP] Check Pods Manifest.lock */,
 				BBB8FA9E20CE5CF300A81120 /* Sources */,
 				BBB8FA9F20CE5CF300A81120 /* Frameworks */,
 				BBB8FAA020CE5CF300A81120 /* Resources */,
-				7B9DF30E3B3CA2B4F0A5AD54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -420,68 +404,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		34E7538B641CC569983E122A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RKAutoLayoutTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E8BF6328DC525CF2F641FA1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RKAutoLayout-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B9DF30E3B3CA2B4F0A5AD54 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RKUIExtensions/RKUIExtensions.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RKUIExtensions.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKAutoLayoutTests/Pods-RKAutoLayoutTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BBB8FA9420CE5CF300A81120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB54D8E4217276FB00CAF502 /* UIApplication.swift in Sources */,
 				BBFD276020CE5D760065BFA1 /* UIView+AddAll.swift in Sources */,
 				BB834453216026070011757E /* UIView+Baseline.swift in Sources */,
 				BB546867215BFFEB00337775 /* RKConstraintBuilder.swift in Sources */,
@@ -662,7 +590,6 @@
 		};
 		BBB8FAAE20CE5CF300A81120 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC470C5FA656F47209EA238 /* Pods-RKAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -688,7 +615,6 @@
 		};
 		BBB8FAAF20CE5CF300A81120 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 808E2681905E3595A4A0872E /* Pods-RKAutoLayout.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -714,7 +640,6 @@
 		};
 		BBB8FAB120CE5CF300A81120 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF308F3C1E0D88348CDC8B1A /* Pods-RKAutoLayoutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -733,7 +658,6 @@
 		};
 		BBB8FAB220CE5CF300A81120 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0EAF9F7EA66C2B945D9715 /* Pods-RKAutoLayoutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

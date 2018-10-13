@@ -1,6 +1,0 @@
-framework module Pods_RKAutoLayoutTests {
-  umbrella header "Pods-RKAutoLayoutTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
