@@ -3,7 +3,7 @@ import UIKit
 public extension UIApplication {
     // MARK: - Hierarchy
     public var topViewController: UIViewController? {
-        var vc: UIViewController? = keyWindow?.window?.rootViewController
+        var vc: UIViewController? = keyWindow?.rootViewController
         while true {
             if let nc = vc as? UINavigationController {
                 vc = nc.viewControllers.last
