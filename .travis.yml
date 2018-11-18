@@ -16,7 +16,7 @@ xcode_scheme: RKAutoLayout
 # - pod install
 
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project RKAutoLayout.xcodeproj -scheme RKAutoLayoutTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.4' | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project RKAutoLayout.xcodeproj -scheme RKAutoLayoutTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' | xcpretty
 - pod lib lint
 
 after_success:
