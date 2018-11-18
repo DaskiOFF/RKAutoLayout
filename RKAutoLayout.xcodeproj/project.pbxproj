@@ -37,6 +37,7 @@
 		BB83445A216028EE0011757E /* RKConstraintLastBaselineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB834459216028EE0011757E /* RKConstraintLastBaselineBuilder.swift */; };
 		BB83445D2160C2CF0011757E /* RKConstraintBaselineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83445C2160C2CF0011757E /* RKConstraintBaselineTests.swift */; };
 		BB83445F2160C67F0011757E /* UIViewExtBaselinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83445E2160C67E0011757E /* UIViewExtBaselinesTests.swift */; };
+		BB91AF5D21A1B999005BB88D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91AF5C21A1B999005BB88D /* Typealiases.swift */; };
 		BBB8FAA320CE5CF300A81120 /* RKAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */; };
 		BBB8FAA820CE5CF300A81120 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8FAA720CE5CF300A81120 /* ArrayExt.swift */; };
 		BBB8FAAA20CE5CF300A81120 /* RKAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,6 +91,7 @@
 		BB834459216028EE0011757E /* RKConstraintLastBaselineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintLastBaselineBuilder.swift; sourceTree = "<group>"; };
 		BB83445C2160C2CF0011757E /* RKConstraintBaselineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKConstraintBaselineTests.swift; sourceTree = "<group>"; };
 		BB83445E2160C67E0011757E /* UIViewExtBaselinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtBaselinesTests.swift; sourceTree = "<group>"; };
+		BB91AF5C21A1B999005BB88D /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		BBB8FA9920CE5CF300A81120 /* RKAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB8FA9C20CE5CF300A81120 /* RKAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAutoLayout.h; sourceTree = "<group>"; };
 		BBB8FA9D20CE5CF300A81120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				BB8344542160269B0011757E /* Baseline */,
 				BBFD275820CE5D760065BFA1 /* Extensions */,
 				BBFD275E20CE5D760065BFA1 /* RKAL.swift */,
+				BB91AF5C21A1B999005BB88D /* Typealiases.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -432,6 +435,7 @@
 				BB83443E215F9B160011757E /* RKConstraintBottomBuilder.swift in Sources */,
 				BB83443A215F9A820011757E /* RKConstraintEdge.swift in Sources */,
 				BB834456216026B40011757E /* RKConstraintBaseline.swift in Sources */,
+				BB91AF5D21A1B999005BB88D /* Typealiases.swift in Sources */,
 				BBFD276520CE5D760065BFA1 /* RKAL.swift in Sources */,
 				BB54687C215D5C2000337775 /* RKConstraintHeightBuilder.swift in Sources */,
 				BB546862215BFF3200337775 /* RKConstraintCenterYBuilder.swift in Sources */,
@@ -608,7 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -633,7 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -651,7 +655,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAutoLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -669,7 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAutoLayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

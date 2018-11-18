@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RKAutoLayout'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Easy Auto Layout'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   Easy Auto Layout
+
+  0.2.3
+    Swift 4.2
 
   0.2.2
     Fix rkSafeAreaLayoutGuide

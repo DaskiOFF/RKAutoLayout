@@ -9,11 +9,16 @@ protocol RKConstraintBuilder: class {
 class RKConstraintBaseBuilder<AnchorType: NSObject> {
     let anchor: AnchorType?
     let value: CGFloat
-    let relation: NSLayoutRelation
+    let relation: LayoutRelation
     let priority: RKConstraintPriority
     let isActive: Bool
 
-    init(anchor: AnchorType?, value: CGFloat, relation: NSLayoutRelation, priority: RKConstraintPriority, isActive: Bool) {
+    init(
+      anchor: AnchorType?,
+      value: CGFloat,
+      relation: LayoutRelation,
+      priority: RKConstraintPriority,
+      isActive: Bool) {
         self.anchor = anchor
         self.value = value
         self.relation = relation
