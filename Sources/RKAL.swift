@@ -47,19 +47,15 @@ public extension NSLayoutConstraint {
 }
 
 @available (iOS 9, *)
-public enum RKConstraintPriority {
-    case high
-    case low
-    case required
-    case custom(Float)
+public struct RKConstraintPriority {
+    public static let high = RKConstraintPriority(value: .defaultHigh)
+    public static let low = RKConstraintPriority(value: .defaultLow)
+    public static let required = RKConstraintPriority(value: .required)
 
-    public var value: UILayoutPriority {
-        switch self {
-        case .high: return UILayoutPriority.defaultHigh
-        case .low: return UILayoutPriority.defaultLow
-        case .required: return UILayoutPriority.required
-        case .custom(let v): return UILayoutPriority(v)
-        }
+    public let value: UILayoutPriority
+
+    public static func custom(_ value: Float) -> RKConstraintPriority {
+        return .init(value: UILayoutPriority(rawValue: value))
     }
 }
 

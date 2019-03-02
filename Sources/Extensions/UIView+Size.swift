@@ -41,10 +41,13 @@ public extension UIView {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
-            if value.builder is RKConstraintWidthBuilder {
+            switch value.builder {
+            case is RKConstraintWidthBuilder:
                 constraintsStorage.sizeWidthConstraints.append(constraint)
-            } else {
+            case is RKConstraintHeightBuilder:
                 constraintsStorage.sizeHeightConstraints.append(constraint)
+            default:
+                fatalError()
             }
         }
 

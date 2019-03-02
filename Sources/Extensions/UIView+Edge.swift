@@ -41,18 +41,21 @@ public extension UIView {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
-            if value.builder is RKConstraintTopBuilder {
+            switch value.builder {
+            case is RKConstraintTopBuilder:
                 constraintsStorage.edgeTopConstraints.append(constraint)
-            } else if value.builder is RKConstraintLeftBuilder {
+            case is RKConstraintLeftBuilder:
                 constraintsStorage.edgeLeftConstraints.append(constraint)
-            } else if value.builder is RKConstraintBottomBuilder {
+            case is RKConstraintBottomBuilder:
                 constraintsStorage.edgeBottomConstraints.append(constraint)
-            } else if value.builder is RKConstraintRightBuilder {
+            case is RKConstraintRightBuilder:
                 constraintsStorage.edgeRightConstraints.append(constraint)
-            } else if value.builder is RKConstraintLeadingBuilder {
+            case is RKConstraintLeadingBuilder:
                 constraintsStorage.edgeLeadingConstraints.append(constraint)
-            } else {
+            case is RKConstraintTrailingBuilder:
                 constraintsStorage.edgeTrailingConstraints.append(constraint)
+            default:
+                fatalError()
             }
         }
 

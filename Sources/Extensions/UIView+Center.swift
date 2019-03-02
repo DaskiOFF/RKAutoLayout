@@ -41,10 +41,13 @@ public extension UIView {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
-            if value.builder is RKConstraintCenterXBuilder {
+            switch value.builder {
+            case is RKConstraintCenterXBuilder:
                 constraintsStorage.centerXConstraints.append(constraint)
-            } else {
+            case is RKConstraintCenterYBuilder:
                 constraintsStorage.centerYConstraints.append(constraint)
+            default:
+                fatalError()
             }
         }
 

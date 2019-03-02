@@ -41,10 +41,13 @@ public extension UIView {
             let constraint = value.builder.build(withView: self, isActive: isActive)
 
             constraints.append(constraint)
-            if value.builder is RKConstraintFirstBaselineBuilder {
+            switch value.builder {
+            case is RKConstraintFirstBaselineBuilder:
                 constraintsStorage.firstBaselineConstraints.append(constraint)
-            } else {
+            case is RKConstraintLastBaselineBuilder:
                 constraintsStorage.lastBaselineConstraints.append(constraint)
+            default:
+                fatalError()
             }
         }
 
